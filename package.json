@@ -2,7 +2,8 @@
   "name": "sum-sleuth",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "app"
   ],
   "scripts": {
     "test": "npm test --workspaces --if-present",

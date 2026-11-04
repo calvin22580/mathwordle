@@ -18,9 +18,37 @@ backend/              FastAPI server (Python)
   app/engine/         the rules: validator, scorer, answers, daily picker, clues
   tests/
 packages/engine/      the same rules in TypeScript, for the app
+app/                  Expo app for iOS, Android and the web
+  src/app/            screens (Expo Router): home, practice, settings, tutorial
+  src/components/     board, tiles, keypad, clue panel, confetti, result card
+  src/state/          game logic hook, settings (saved on the device)
+  src/theme/          light, dark and colour-blind palettes, text sizes
+  src/services/       haptics, sounds, brand
 ```
 
-The Expo app (`app/`) and the API routes arrive in later phases.
+The API routes and daily puzzle arrive in a later phase.
+
+## Running the app
+
+Needs Node 20 or newer. From the repo root:
+
+```
+npm install
+cd app
+npx expo start
+```
+
+Then:
+
+- **On your phone:** install Expo Go from the App Store or Google Play and scan
+  the QR code in the terminal. Phone and computer must be on the same Wi-Fi
+  (or run `npx expo start --tunnel`).
+- **In a browser:** press `w`, or run `npx expo start --web`.
+
+Physical keyboards work on the web: digits, `+ - * / x =`, Enter and Backspace.
+
+Practice mode works fully offline. Settings (theme, colour-blind colours, text
+size, sounds, vibration) are saved on the device.
 
 ## The game engine
 
