@@ -1,0 +1,18 @@
+{
+  "name": "@sumsleuth/engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sum Sleuth game rules for the app: validator, scorer, practice puzzles and clues.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
