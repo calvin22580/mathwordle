@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.hypothesis/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# Expo
+.expo/
+web-build/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+.DS_Store
