@@ -1,0 +1,8 @@
+{
+  "name": "Sum Sleuth",
+  "tagline": "Crack the hidden sum in six guesses.",
+  "shareUrl": "https://sumsleuth.example",
+  "iosBundleId": "com.example.sumsleuth",
+  "androidPackage": "com.example.sumsleuth",
+  "urlScheme": "sumsleuth"
+}

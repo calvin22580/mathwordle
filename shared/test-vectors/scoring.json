@@ -1,0 +1,4446 @@
+[
+ {
+  "guess": "9÷3×9=27",
+  "answer": "9÷3×9=27",
+  "marks": [
+   "correct",
+   "correct",
+   "correct",
+   "correct",
+   "correct",
+   "correct",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3+4=7",
+  "answer": "4+3=7",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1+2=3",
+  "answer": "4×5=9",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "11+1=12",
+  "answer": "12−1=11",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "correct",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "99÷9=11",
+  "answer": "19+8=27",
+  "marks": [
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2+22=24",
+  "answer": "22÷2=11",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "correct",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "5+5=10",
+  "answer": "10−5=5",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "1111",
+  "answer": "3311",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0121030",
+  "answer": "2301021",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "3",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "220111211",
+  "answer": "323133320",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "correct",
+   "absent",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "00213",
+  "answer": "10230",
+  "marks": [
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "0",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "313033",
+  "answer": "100033",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "correct",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1101301",
+  "answer": "0210231",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "2102",
+  "answer": "3231",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "0221230",
+  "answer": "2112302",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2232",
+  "answer": "2313",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0002",
+  "answer": "0213",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "210",
+  "answer": "120",
+  "marks": [
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0033",
+  "answer": "2312",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "101",
+  "answer": "212",
+  "marks": [
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "2",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "3233",
+  "answer": "1123",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "02222123",
+  "answer": "02323232",
+  "marks": [
+   "correct",
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "33",
+  "answer": "03",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "32",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "031233",
+  "answer": "212202",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "32320101",
+  "answer": "10322003",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "231110",
+  "answer": "321001",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "21",
+  "answer": "10",
+  "marks": [
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "00",
+  "answer": "32",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "1321103",
+  "answer": "3021222",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "correct",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "13023",
+  "answer": "13332",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "2213111",
+  "answer": "0002032",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "30201",
+  "answer": "20321",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0100",
+  "answer": "1220",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "103",
+  "answer": "121",
+  "marks": [
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "222",
+  "answer": "200",
+  "marks": [
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "03001320",
+  "answer": "31101120",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "correct",
+   "correct",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "32",
+  "answer": "01",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "01",
+  "answer": "33",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "300133202",
+  "answer": "002203331",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "present",
+   "present",
+   "correct",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "330",
+  "answer": "013",
+  "marks": [
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "22101",
+  "answer": "22203",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3132",
+  "answer": "0203",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "1",
+  "answer": "2",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "21313",
+  "answer": "01233",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "23",
+  "answer": "32",
+  "marks": [
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "1012201",
+  "answer": "1020021",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "12",
+  "answer": "23",
+  "marks": [
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "1123230",
+  "answer": "0112111",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "03322303",
+  "answer": "03212330",
+  "marks": [
+   "correct",
+   "correct",
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0311",
+  "answer": "2010",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3101",
+  "answer": "2232",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "21010012",
+  "answer": "10310003",
+  "marks": [
+   "absent",
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0132",
+  "answer": "3111",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "01023",
+  "answer": "23102",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "0221",
+  "answer": "1100",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "333121",
+  "answer": "300212",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2322",
+  "answer": "1032",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1020302",
+  "answer": "0023121",
+  "marks": [
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "3022",
+  "answer": "1231",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "30330213",
+  "answer": "30232023",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3132223",
+  "answer": "1321222",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "300113",
+  "answer": "112000",
+  "marks": [
+   "absent",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "10013211",
+  "answer": "20100212",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "02103",
+  "answer": "21320",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "21031",
+  "answer": "13212",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "33322021",
+  "answer": "12101301",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1202",
+  "answer": "0311",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "22121",
+  "answer": "30232",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "21",
+  "answer": "32",
+  "marks": [
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "10103",
+  "answer": "11333",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "013",
+  "answer": "301",
+  "marks": [
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "32021",
+  "answer": "03321",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "03",
+  "answer": "03",
+  "marks": [
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "01000",
+  "answer": "23330",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "131",
+  "answer": "011",
+  "marks": [
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "233331200",
+  "answer": "002201322",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "correct",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "203113130",
+  "answer": "131313312",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0203102",
+  "answer": "3321321",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "present",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "22032322",
+  "answer": "31331031",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "003",
+  "answer": "030",
+  "marks": [
+   "correct",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "2",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "11",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3302221",
+  "answer": "2002113",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "correct",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "30200",
+  "answer": "02332",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3330",
+  "answer": "3013",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "01230111",
+  "answer": "11113102",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "023",
+  "answer": "131",
+  "marks": [
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "020303",
+  "answer": "202023",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "031213303",
+  "answer": "033113320",
+  "marks": [
+   "correct",
+   "correct",
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "correct",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "31",
+  "answer": "03",
+  "marks": [
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "032210",
+  "answer": "210330",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "032332",
+  "answer": "221200",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "131232",
+  "answer": "022312",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1",
+  "answer": "3",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "23113",
+  "answer": "20231",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "133",
+  "answer": "123",
+  "marks": [
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "02",
+  "answer": "33",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "1113010",
+  "answer": "0223100",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "103",
+  "answer": "310",
+  "marks": [
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "133132312",
+  "answer": "303012001",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0120",
+  "answer": "2331",
+  "marks": [
+   "absent",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3322212",
+  "answer": "0211111",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "22101002",
+  "answer": "20202032",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "correct",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "312010221",
+  "answer": "111232030",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "110",
+  "answer": "231",
+  "marks": [
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0210310",
+  "answer": "2210331",
+  "marks": [
+   "absent",
+   "correct",
+   "correct",
+   "correct",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2230",
+  "answer": "1130",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "113022331",
+  "answer": "312333012",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "103013112",
+  "answer": "313020023",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "01302233",
+  "answer": "03330123",
+  "marks": [
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "103",
+  "answer": "222",
+  "marks": [
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "01",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "21321",
+  "answer": "32331",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "2001",
+  "answer": "3202",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "21100",
+  "answer": "13231",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "31",
+  "answer": "23",
+  "marks": [
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "11130",
+  "answer": "11222",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "1222222",
+  "answer": "0323101",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3331",
+  "answer": "0312",
+  "marks": [
+   "absent",
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "32103001",
+  "answer": "31320211",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "310",
+  "answer": "323",
+  "marks": [
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "213223311",
+  "answer": "312302300",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "33",
+  "answer": "03",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0202210",
+  "answer": "0301112",
+  "marks": [
+   "correct",
+   "present",
+   "correct",
+   "absent",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "03111",
+  "answer": "12113",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "31223313",
+  "answer": "10331323",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "322",
+  "answer": "103",
+  "marks": [
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "211",
+  "answer": "132",
+  "marks": [
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "323",
+  "answer": "330",
+  "marks": [
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "0003",
+  "answer": "2220",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "211121012",
+  "answer": "200120031",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "correct",
+   "absent",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3000",
+  "answer": "0220",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "23120320",
+  "answer": "23113310",
+  "marks": [
+   "correct",
+   "correct",
+   "correct",
+   "absent",
+   "absent",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "010113",
+  "answer": "102233",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "2",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "020",
+  "answer": "312",
+  "marks": [
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "03123",
+  "answer": "01221",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "113",
+  "answer": "212",
+  "marks": [
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "12000",
+  "answer": "23310",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3032",
+  "answer": "2000",
+  "marks": [
+   "absent",
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "3",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "2022230",
+  "answer": "2310013",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "3102331",
+  "answer": "0001230",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "231023031",
+  "answer": "030012121",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1231",
+  "answer": "0132",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "01",
+  "answer": "01",
+  "marks": [
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3320022",
+  "answer": "1102102",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "11",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "20121",
+  "answer": "21200",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "22313232",
+  "answer": "13310331",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "2",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "3223",
+  "answer": "3203",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "112311",
+  "answer": "013323",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "11203100",
+  "answer": "32020112",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "02200",
+  "answer": "23022",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "231",
+  "answer": "210",
+  "marks": [
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "31000201",
+  "answer": "33323312",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "20",
+  "marks": [
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "3",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "03",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "111210",
+  "answer": "222003",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "021300",
+  "answer": "100211",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "233330",
+  "answer": "213332",
+  "marks": [
+   "correct",
+   "absent",
+   "correct",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "00",
+  "answer": "02",
+  "marks": [
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "1020",
+  "answer": "1310",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "21",
+  "answer": "31",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3332",
+  "answer": "3100",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "103033031",
+  "answer": "101032313",
+  "marks": [
+   "correct",
+   "correct",
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "3112",
+  "answer": "1331",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "100300",
+  "answer": "203002",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "03",
+  "answer": "31",
+  "marks": [
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "323222202",
+  "answer": "102210330",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "correct",
+   "absent",
+   "absent",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "23200",
+  "answer": "10211",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "232133",
+  "answer": "030132",
+  "marks": [
+   "present",
+   "correct",
+   "absent",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "20",
+  "answer": "33",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3013",
+  "answer": "0200",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "123112302",
+  "answer": "021002210",
+  "marks": [
+   "present",
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "300100",
+  "answer": "310231",
+  "marks": [
+   "correct",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "231",
+  "answer": "000",
+  "marks": [
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "132",
+  "answer": "312",
+  "marks": [
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "122",
+  "answer": "212",
+  "marks": [
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "01333",
+  "answer": "33213",
+  "marks": [
+   "absent",
+   "present",
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "122201",
+  "answer": "020332",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2032",
+  "answer": "3311",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "22310",
+  "answer": "22210",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "20",
+  "answer": "10",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0023032",
+  "answer": "2011002",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "32",
+  "answer": "23",
+  "marks": [
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "32",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "13320",
+  "answer": "23112",
+  "marks": [
+   "present",
+   "correct",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "031220233",
+  "answer": "011023213",
+  "marks": [
+   "correct",
+   "present",
+   "correct",
+   "absent",
+   "correct",
+   "present",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3301",
+  "answer": "0133",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "1011330",
+  "answer": "0100322",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "32020",
+  "answer": "13010",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "130130212",
+  "answer": "121212131",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "23322",
+  "answer": "31301",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "301",
+  "answer": "333",
+  "marks": [
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "103213031",
+  "answer": "030333010",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "31002033",
+  "answer": "30232132",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "013323",
+  "answer": "231100",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "112",
+  "answer": "221",
+  "marks": [
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "213",
+  "answer": "111",
+  "marks": [
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "032313130",
+  "answer": "303222223",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "10022113",
+  "answer": "03022120",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "correct",
+   "correct",
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "011",
+  "answer": "300",
+  "marks": [
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "313303220",
+  "answer": "110100333",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "present",
+   "correct",
+   "absent",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "0111",
+  "answer": "0221",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "10331122",
+  "answer": "01102032",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "212",
+  "answer": "013",
+  "marks": [
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0013",
+  "answer": "3131",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "001120",
+  "answer": "123330",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "12",
+  "answer": "02",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "21130003",
+  "answer": "20023101",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "23",
+  "answer": "20",
+  "marks": [
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "102",
+  "answer": "133",
+  "marks": [
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "031",
+  "answer": "013",
+  "marks": [
+   "correct",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "3022310",
+  "answer": "2300022",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "11223033",
+  "answer": "23232312",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "32",
+  "answer": "12",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "31120231",
+  "answer": "21222311",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3022322",
+  "answer": "1101133",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "103202100",
+  "answer": "012123200",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "present",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "22130022",
+  "answer": "20302101",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "332",
+  "answer": "330",
+  "marks": [
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "233201002",
+  "answer": "111123133",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "00010021",
+  "answer": "22100221",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "32000",
+  "answer": "00310",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "2310013",
+  "answer": "2202213",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "221003",
+  "answer": "202001",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2012320",
+  "answer": "2032100",
+  "marks": [
+   "correct",
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "23023",
+  "answer": "23122",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2310",
+  "answer": "1003",
+  "marks": [
+   "absent",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "00322",
+  "answer": "21312",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "220320233",
+  "answer": "220101301",
+  "marks": [
+   "correct",
+   "correct",
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "001321312",
+  "answer": "323330332",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "220101",
+  "answer": "012013",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "3312330",
+  "answer": "2122131",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "122",
+  "answer": "312",
+  "marks": [
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3203",
+  "answer": "3201",
+  "marks": [
+   "correct",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "00121132",
+  "answer": "02310322",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "303313013",
+  "answer": "122123112",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "1111231",
+  "answer": "2311332",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "correct",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "120",
+  "answer": "130",
+  "marks": [
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "01020",
+  "answer": "02012",
+  "marks": [
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2021201",
+  "answer": "1001323",
+  "marks": [
+   "present",
+   "correct",
+   "absent",
+   "correct",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "013333020",
+  "answer": "333221311",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "3",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "32120",
+  "answer": "03212",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "0030313",
+  "answer": "3332112",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "absent",
+   "present",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "330001",
+  "answer": "301331",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "332020",
+  "answer": "220103",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "20010022",
+  "answer": "00322322",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "31",
+  "answer": "11",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "12",
+  "answer": "11",
+  "marks": [
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "1",
+  "answer": "1",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "22211",
+  "answer": "11010",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "33212",
+  "answer": "23110",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "021",
+  "answer": "323",
+  "marks": [
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "130",
+  "answer": "213",
+  "marks": [
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "1",
+  "answer": "1",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "20",
+  "answer": "33",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "333011323",
+  "answer": "203113132",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "021012202",
+  "answer": "011321310",
+  "marks": [
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "022",
+  "answer": "022",
+  "marks": [
+   "correct",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "12300",
+  "answer": "32011",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2002022",
+  "answer": "1231113",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "032310",
+  "answer": "300111",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "1201001",
+  "answer": "3313333",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "030110",
+  "answer": "302021",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "233",
+  "answer": "002",
+  "marks": [
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "302331",
+  "answer": "321313",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "correct",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "10100",
+  "answer": "13200",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1323333",
+  "answer": "3211332",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "3223001",
+  "answer": "1022221",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "000222",
+  "answer": "112331",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "33301",
+  "answer": "00000",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "22100",
+  "answer": "20301",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "1",
+  "answer": "3",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "2",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "302",
+  "answer": "323",
+  "marks": [
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "33",
+  "answer": "13",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "22",
+  "answer": "33",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "111012",
+  "answer": "301323",
+  "marks": [
+   "absent",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "3",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "1223",
+  "answer": "3222",
+  "marks": [
+   "absent",
+   "correct",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "0122120",
+  "answer": "0221000",
+  "marks": [
+   "correct",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "31300",
+  "answer": "13103",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "13120",
+  "answer": "22010",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "022231",
+  "answer": "020000",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "230001",
+  "answer": "021012",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "0211111",
+  "answer": "0201221",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "022122",
+  "answer": "001112",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "3",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "310311000",
+  "answer": "112222202",
+  "marks": [
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "10",
+  "answer": "21",
+  "marks": [
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "02",
+  "answer": "23",
+  "marks": [
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "2133102",
+  "answer": "0032000",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "30110222",
+  "answer": "12002230",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "311122223",
+  "answer": "332323110",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "2023",
+  "answer": "1202",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "01122322",
+  "answer": "11332032",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "21012",
+  "answer": "00131",
+  "marks": [
+   "absent",
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0223",
+  "answer": "0201",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "32",
+  "answer": "32",
+  "marks": [
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3302",
+  "answer": "0030",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "213023",
+  "answer": "021320",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "322112",
+  "answer": "132302",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "001101",
+  "answer": "111021",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1301",
+  "answer": "3002",
+  "marks": [
+   "absent",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "002",
+  "answer": "202",
+  "marks": [
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0212220",
+  "answer": "0030101",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "211",
+  "answer": "201",
+  "marks": [
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "032211",
+  "answer": "320031",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "32320323",
+  "answer": "33131212",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "312",
+  "answer": "132",
+  "marks": [
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1210121",
+  "answer": "1020330",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "201",
+  "answer": "302",
+  "marks": [
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "233232",
+  "answer": "323230",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "321333",
+  "answer": "220031",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "10123210",
+  "answer": "22323021",
+  "marks": [
+   "present",
+   "present",
+   "absent",
+   "correct",
+   "correct",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "031221",
+  "answer": "012122",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "present",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "032033211",
+  "answer": "102122000",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "11",
+  "answer": "11",
+  "marks": [
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "2",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "330223012",
+  "answer": "230300112",
+  "marks": [
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "10030",
+  "answer": "22122",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "233",
+  "answer": "231",
+  "marks": [
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3320",
+  "answer": "3211",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "33001301",
+  "answer": "32000222",
+  "marks": [
+   "correct",
+   "absent",
+   "correct",
+   "correct",
+   "absent",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "3232",
+  "answer": "2221",
+  "marks": [
+   "absent",
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "10132",
+  "answer": "32023",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "122310000",
+  "answer": "302030321",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "03031231",
+  "answer": "20320102",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "312200133",
+  "answer": "320013313",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "present",
+   "correct"
+  ]
+ },
+ {
+  "guess": "103",
+  "answer": "200",
+  "marks": [
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "01",
+  "answer": "02",
+  "marks": [
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "230202021",
+  "answer": "111310301",
+  "marks": [
+   "absent",
+   "present",
+   "present",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "02231130",
+  "answer": "30120230",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "2201",
+  "answer": "0312",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "12112012",
+  "answer": "00100311",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "absent",
+   "present",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "311131",
+  "answer": "110101",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "correct",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3130",
+  "answer": "1002",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "03",
+  "answer": "22",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "01",
+  "answer": "31",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "3",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "1032",
+  "answer": "3111",
+  "marks": [
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0022",
+  "answer": "3333",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "23001023",
+  "answer": "20010102",
+  "marks": [
+   "correct",
+   "absent",
+   "correct",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "30333",
+  "answer": "11101",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2221100",
+  "answer": "2210311",
+  "marks": [
+   "correct",
+   "correct",
+   "absent",
+   "present",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "20013012",
+  "answer": "21220330",
+  "marks": [
+   "correct",
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "1212",
+  "answer": "2323",
+  "marks": [
+   "absent",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "21123102",
+  "answer": "20120200",
+  "marks": [
+   "correct",
+   "absent",
+   "correct",
+   "correct",
+   "absent",
+   "absent",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "10220023",
+  "answer": "20020212",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "correct",
+   "correct",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2202202",
+  "answer": "2130113",
+  "marks": [
+   "correct",
+   "absent",
+   "present",
+   "absent",
+   "absent",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "303100",
+  "answer": "232031",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "213",
+  "answer": "120",
+  "marks": [
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "33133",
+  "answer": "30330",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "0",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "31133",
+  "answer": "21012",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "20",
+  "answer": "10",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "03323",
+  "answer": "01231",
+  "marks": [
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "302130",
+  "answer": "132211",
+  "marks": [
+   "present",
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0110",
+  "answer": "0220",
+  "marks": [
+   "correct",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "33002",
+  "answer": "01211",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "022",
+  "answer": "020",
+  "marks": [
+   "correct",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "0",
+  "answer": "1",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "21",
+  "answer": "13",
+  "marks": [
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "2",
+  "answer": "2",
+  "marks": [
+   "correct"
+  ]
+ },
+ {
+  "guess": "3021230",
+  "answer": "2101323",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "correct",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "2103130",
+  "answer": "0020112",
+  "marks": [
+   "present",
+   "present",
+   "present",
+   "absent",
+   "correct",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "20310320",
+  "answer": "10312213",
+  "marks": [
+   "present",
+   "correct",
+   "correct",
+   "correct",
+   "absent",
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "21321",
+  "answer": "12321",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "0103012",
+  "answer": "3203301",
+  "marks": [
+   "present",
+   "present",
+   "correct",
+   "correct",
+   "absent",
+   "absent",
+   "present"
+  ]
+ },
+ {
+  "guess": "10033",
+  "answer": "20202",
+  "marks": [
+   "absent",
+   "correct",
+   "present",
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "31",
+  "answer": "01",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "122",
+  "answer": "201",
+  "marks": [
+   "present",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "30",
+  "answer": "21",
+  "marks": [
+   "absent",
+   "absent"
+  ]
+ },
+ {
+  "guess": "33113303",
+  "answer": "21202221",
+  "marks": [
+   "absent",
+   "absent",
+   "present",
+   "present",
+   "absent",
+   "absent",
+   "present",
+   "absent"
+  ]
+ },
+ {
+  "guess": "013103",
+  "answer": "210302",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "correct",
+   "absent"
+  ]
+ },
+ {
+  "guess": "011023",
+  "answer": "113102",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "present"
+  ]
+ },
+ {
+  "guess": "23",
+  "answer": "03",
+  "marks": [
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "2210",
+  "answer": "3320",
+  "marks": [
+   "present",
+   "absent",
+   "absent",
+   "correct"
+  ]
+ },
+ {
+  "guess": "3",
+  "answer": "0",
+  "marks": [
+   "absent"
+  ]
+ },
+ {
+  "guess": "111010",
+  "answer": "000010",
+  "marks": [
+   "absent",
+   "absent",
+   "absent",
+   "correct",
+   "correct",
+   "correct"
+  ]
+ },
+ {
+  "guess": "1211002",
+  "answer": "2200101",
+  "marks": [
+   "present",
+   "correct",
+   "present",
+   "absent",
+   "present",
+   "correct",
+   "present"
+  ]
+ },
+ {
+  "guess": "110",
+  "answer": "122",
+  "marks": [
+   "correct",
+   "absent",
+   "absent"
+  ]
+ }
+]

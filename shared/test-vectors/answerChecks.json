@@ -1,0 +1,182 @@
+[
+ {
+  "equation": "9÷3×9=27",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "3+4=7",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "12÷3=4",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "5×1=5",
+  "ok": false,
+  "code": "times_one"
+ },
+ {
+  "equation": "1×5=5",
+  "ok": false,
+  "code": "times_one"
+ },
+ {
+  "equation": "8÷1=8",
+  "ok": false,
+  "code": "divide_one"
+ },
+ {
+  "equation": "6÷6=1",
+  "ok": false,
+  "code": "divide_self"
+ },
+ {
+  "equation": "5+0=5",
+  "ok": false,
+  "code": "zero_operand"
+ },
+ {
+  "equation": "0+5=5",
+  "ok": false,
+  "code": "zero_operand"
+ },
+ {
+  "equation": "5×0=0",
+  "ok": false,
+  "code": "zero_operand"
+ },
+ {
+  "equation": "5−5=0",
+  "ok": false,
+  "code": "zero_answer"
+ },
+ {
+  "equation": "7÷2×4=14",
+  "ok": false,
+  "code": "not_whole_steps"
+ },
+ {
+  "equation": "1−5+9=5",
+  "ok": false,
+  "code": "not_whole_steps"
+ },
+ {
+  "equation": "2×4−4=4",
+  "ok": false,
+  "code": "answer_is_operand"
+ },
+ {
+  "equation": "9+1+1=12",
+  "ok": false,
+  "code": "not_true"
+ },
+ {
+  "equation": "12=3+9",
+  "ok": false,
+  "code": "right_not_number"
+ },
+ {
+  "equation": "1+9=10",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "10−9=1",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "12÷3=4",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "13−5=8",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "14−9=5",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "16−9=7",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "20÷5=4",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "28÷7=4",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "30÷6=5",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "3×7=21",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "42÷7=6",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "4×8=32",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "56÷8=7",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "6+5=11",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "6×5=30",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "7+8=15",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "7×8=56",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "8×2=16",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "9+3=12",
+  "ok": true,
+  "code": null
+ },
+ {
+  "equation": "9×5=45",
+  "ok": true,
+  "code": null
+ }
+]
