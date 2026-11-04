@@ -1,0 +1,8 @@
+{
+  "maxGuesses": 6,
+  "difficulties": {
+    "easy": { "length": 5 },
+    "medium": { "length": 6 },
+    "hard": { "length": 8 }
+  }
+}

@@ -1,0 +1,7982 @@
+[
+ {
+  "guess": "9÷3×9=27",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "3+4=7",
+  "length": 5,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "2+3×4=14",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "20−6÷2=17",
+  "length": 9,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "8÷2÷2=2",
+  "length": 7,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "9−3−2=4",
+  "length": 7,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "3÷2×4=6",
+  "length": 7,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "1−5+9=5",
+  "length": 7,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "5−5=0",
+  "length": 5,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "0+5=5",
+  "length": 5,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "9+1+1=12",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 9+1+1 = 11, not 12."
+ },
+ {
+  "guess": "7÷2=3",
+  "length": 5,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7÷2 = 3.5, not 3."
+ },
+ {
+  "guess": "10÷3=3",
+  "length": 6,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 10÷3 = 3.33…, not 3."
+ },
+ {
+  "guess": "1−5+1=3",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 1−5+1 = −3, not 3."
+ },
+ {
+  "guess": "3+4=7",
+  "length": 6,
+  "ok": false,
+  "code": "too_short",
+  "reason": "Fill all 6 tiles first."
+ },
+ {
+  "guess": "3+4=7",
+  "length": 4,
+  "ok": false,
+  "code": "too_long",
+  "reason": "Use exactly 4 tiles."
+ },
+ {
+  "guess": "",
+  "length": 5,
+  "ok": false,
+  "code": "too_short",
+  "reason": "Fill all 5 tiles first."
+ },
+ {
+  "guess": "12345",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1=1=1",
+  "length": 5,
+  "ok": false,
+  "code": "many_equals",
+  "reason": "Use only one equals sign."
+ },
+ {
+  "guess": "=1+23",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "1+23=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "12=3+9",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1−4=−3",
+  "length": 6,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "3+4=07",
+  "length": 6,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 7, not 07."
+ },
+ {
+  "guess": "03+4=7",
+  "length": 6,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 3, not 03."
+ },
+ {
+  "guess": "00+4=4",
+  "length": 6,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 0, not 00."
+ },
+ {
+  "guess": "−3+5=2",
+  "length": 6,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Negative numbers aren't allowed. Start with a number."
+ },
+ {
+  "guess": "+3+5=8",
+  "length": 6,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "35+=8",
+  "length": 5,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "3+−5=8",
+  "length": 6,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (+−)."
+ },
+ {
+  "guess": "3××5=15",
+  "length": 7,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (××)."
+ },
+ {
+  "guess": "123=123",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "5÷0=0",
+  "length": 5,
+  "ok": false,
+  "code": "divide_by_zero",
+  "reason": "You can't divide by 0."
+ },
+ {
+  "guess": "5÷0×0=0",
+  "length": 7,
+  "ok": false,
+  "code": "divide_by_zero",
+  "reason": "You can't divide by 0."
+ },
+ {
+  "guess": "3a4=7",
+  "length": 5,
+  "ok": false,
+  "code": "bad_character",
+  "reason": "“a” can't be used. Use the digits 0–9 and + − × ÷ =."
+ },
+ {
+  "guess": "+3=07",
+  "length": 5,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 7, not 07."
+ },
+ {
+  "guess": "1÷8=0",
+  "length": 5,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 1÷8 = 0.125, not 0."
+ },
+ {
+  "guess": "10−2×3+1=5",
+  "length": 10,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "99×99=9801",
+  "length": 10,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "1÷3×3=1",
+  "length": 7,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "788−=71",
+  "length": 7,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "6=−5992",
+  "length": 7,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "58188=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "+4830+=÷4",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "78=−2−",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1=−6",
+  "length": 4,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "+19068",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "6=40+5",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "4−=2188",
+  "length": 7,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "÷−=85×",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=70×45",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "77178=×÷8",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "199÷=91",
+  "length": 7,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "4×=5+90496",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "417=52−÷+",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=7980662−",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "89−×÷=0285",
+  "length": 10,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 285, not 0285."
+ },
+ {
+  "guess": "06=3",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "4=85÷4",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "479012=−",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=8−+−",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "3141×8=+8",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+32=18",
+  "length": 6,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "×7×07+3÷1",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=×÷5661",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "÷77=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−=30",
+  "length": 4,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Negative numbers aren't allowed. Start with a number."
+ },
+ {
+  "guess": "5=1×",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "47=737÷465",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "01+2=26+",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "5+×49=11",
+  "length": 8,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (+×)."
+ },
+ {
+  "guess": "××1",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "9=7+÷6",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "9=0+15+6÷",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "20=÷",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "4++8=÷",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "54×=176",
+  "length": 7,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "9341",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "17=620",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "5×4480=57−",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "82113−2=10",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 82113−2 = 82111, not 10."
+ },
+ {
+  "guess": "5=03",
+  "length": 4,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 3, not 03."
+ },
+ {
+  "guess": "=005",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "×341205+=+",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "48=9959",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "÷48=08",
+  "length": 6,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 8, not 08."
+ },
+ {
+  "guess": "−=+2÷",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "0×17",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "2×=5744103",
+  "length": 10,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "=6378+÷2",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "4=283292",
+  "length": 8,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "1=04",
+  "length": 4,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 4, not 04."
+ },
+ {
+  "guess": "++495×5+2=",
+  "length": 10,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "0×=×30",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=999",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "÷91=447−÷0",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "86=2875×6÷",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "−43=04−×",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "55+143",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "083=0",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "=+002",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "×+98=+3051",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=1×6×",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "905=9−5",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7÷=21",
+  "length": 5,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "+÷=551",
+  "length": 6,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "1=072",
+  "length": 5,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 72, not 072."
+ },
+ {
+  "guess": "=−14532−2",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "8+=66÷1",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8+790=459",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 8+790 = 798, not 459."
+ },
+ {
+  "guess": "9=−0++78",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "2652=14",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "=1208÷924",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "×66196",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "2×7=32",
+  "length": 6,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2×7 = 14, not 32."
+ },
+ {
+  "guess": "=÷28+8÷7−",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "811149=957",
+  "length": 10,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "1−27÷",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "64÷+=+×239",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7×20999",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "2÷8=3",
+  "length": 5,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2÷8 = 0.25, not 3."
+ },
+ {
+  "guess": "÷4410=82",
+  "length": 8,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "529÷+4=42",
+  "length": 9,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (÷+)."
+ },
+ {
+  "guess": "718",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "÷4=−76×1+8",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=098÷",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "×=78×70",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7=862",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "8+=8",
+  "length": 4,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "=336",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "21×11÷=23−",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+÷−354=−2",
+  "length": 9,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "=30691×",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "2×286=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "÷05",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "0−7=7",
+  "length": 5,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 0−7 = −7, not 7."
+ },
+ {
+  "guess": "7−÷6−",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "39=0",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "8=6−÷6÷0",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+3399",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "−0×23+=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "+7−−0÷−5=9",
+  "length": 10,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "+483−=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "171=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×6××=9966",
+  "length": 9,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "+23956=−",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "621÷14=−",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7×=893",
+  "length": 6,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "6=4÷7",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "9=464×−644",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "117648=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×59÷64087",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "4660−",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "45−=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "1=6621120",
+  "length": 9,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "03933=×377",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=×3÷×80÷",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "24÷8×2÷28",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "×÷5=6",
+  "length": 5,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "95−2=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "9=4−6÷3651",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=4+0×005",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "8=0−",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+72+÷1÷82=",
+  "length": 10,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "6÷=22476",
+  "length": 8,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "45=52",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "3÷186987+=",
+  "length": 10,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "2×5×=513",
+  "length": 8,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "=0÷137×+",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "12+1=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "÷747×+7=5",
+  "length": 9,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "8×÷÷9×1=2",
+  "length": 9,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (×÷)."
+ },
+ {
+  "guess": "2466=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "206=3×",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "2=75×80×",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "53225=÷6",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+×=4+5×497",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "00×÷÷423",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=+489××84",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "880×145+",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "112=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "77×=4×",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8×94=52÷9",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=3978",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "65×2=×",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "751÷0=98",
+  "length": 8,
+  "ok": false,
+  "code": "divide_by_zero",
+  "reason": "You can't divide by 0."
+ },
+ {
+  "guess": "2×7040=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×91+400×=",
+  "length": 9,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "÷=32",
+  "length": 4,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "+275−=3÷−3",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "89202740=3",
+  "length": 10,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "=6271÷",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "1+÷+9=1",
+  "length": 7,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (+÷)."
+ },
+ {
+  "guess": "−÷75083=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "+2−65110",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "3=3÷÷",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "4+1÷−1=9",
+  "length": 8,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (÷−)."
+ },
+ {
+  "guess": "879×÷÷2=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "919÷=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "62=60",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "÷0=47",
+  "length": 5,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "−9÷××−4",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=2×45",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "=80÷",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "+×3×5×÷=09",
+  "length": 10,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 9, not 09."
+ },
+ {
+  "guess": "+=352",
+  "length": 5,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "977×3=+26",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+0916+",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "7509=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "27=÷72",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "××+516=497",
+  "length": 10,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "78−",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "6=÷61+31",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=++223++",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "95=72",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "7=+912173",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷=+9",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "85=÷070+76",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3×41=952",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 3×41 = 123, not 952."
+ },
+ {
+  "guess": "45840−6÷",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=×÷79÷",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "76×÷4",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "2×××03=2",
+  "length": 8,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (××)."
+ },
+ {
+  "guess": "−1=2÷7÷",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1×=103",
+  "length": 6,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "9=67×",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "66÷=57÷÷",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1−3−0=7÷",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "−0=−",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "49=+8×008",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=049",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "×975+=829×",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "6÷=11",
+  "length": 5,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "−8=6−−9",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "862÷×=×",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "534−=46×29",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "6=9631",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "77=1",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "−=42+",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=673",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "÷3=606××3+",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8=−5÷3−",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1139−+−8",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1082×=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "13−×=10×",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "2502=72",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "86−9×9=2−",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷8×753=056",
+  "length": 10,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 56, not 056."
+ },
+ {
+  "guess": "0909=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "+7=9143−×7",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "66=455×÷5",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "5+8÷−8×",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "30×7=88",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 30×7 = 210, not 88."
+ },
+ {
+  "guess": "736=528",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "+8525×8",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=÷036−90",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "54=0022728",
+  "length": 10,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 22728, not 0022728."
+ },
+ {
+  "guess": "=÷−−+",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "=7−07",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "=16÷−",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "5=470×0",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "×=893597",
+  "length": 8,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "4−70−=641",
+  "length": 9,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "9469−671=",
+  "length": 9,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=7213××127",
+  "length": 10,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "45=++×+÷−2",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3=+860",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "426=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=70+45×7",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "17÷×−6=558",
+  "length": 10,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (÷×)."
+ },
+ {
+  "guess": "7+=5÷÷",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "9792",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=÷4÷",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "4−5−9=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−25++=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=×9944×",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "3=0844×7",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "13=3+5",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8=7−6−",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=3401+8",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "5=+544",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3×−×+2",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=738+5",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "7224=5÷×98",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "72+284×",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "÷÷=335",
+  "length": 6,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "6=++4",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "2+3",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1−9+=175",
+  "length": 8,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "31=526",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "15=84÷45",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3×=÷894612",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "28×÷4227",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1694=7",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "507−=4+16",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "5=++9",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "83=0",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "=÷55÷3103÷",
+  "length": 10,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "294×÷6",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "61+=2+",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=2÷−÷+×4",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "97×=6",
+  "length": 5,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "54+=5÷8+",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "−0+7×−=−7",
+  "length": 9,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "6+48−2÷",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "8÷÷+85=855",
+  "length": 10,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (÷÷)."
+ },
+ {
+  "guess": "5231=34064",
+  "length": 10,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "806",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "+6=65",
+  "length": 5,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "4807",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "+91",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "8754×××",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "09+=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=0+×",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "2=−×−685",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+11−2=5",
+  "length": 7,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "89=−+88",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+4+=0×3121",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "4+=÷3−−4",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "2+4=883",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2+4 = 6, not 883."
+ },
+ {
+  "guess": "150−÷7×=+",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "63+4=0÷",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "9÷=01−",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "771÷+6=181",
+  "length": 10,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (÷+)."
+ },
+ {
+  "guess": "52×23",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "516739++1",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "872×7=6×3",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=+6−71÷",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "427=507",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "026219−−×",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=2×−0÷",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "371366−",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "812÷×=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "7+=−",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "2507=7",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "6=13÷",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3×17=94682",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 3×17 = 51, not 94682."
+ },
+ {
+  "guess": "+97÷06",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "608÷61",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "×=8330−4×",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "72−0=872×÷",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1=+533",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "31−7361−=7",
+  "length": 10,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "÷0842",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "206726",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "41854",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "−730−=299×",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3=11×7×",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "95812",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "496",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "0−+=+9042−",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=−675",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "3=41",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "=×165+",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "−29=×",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8=831",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "÷0=×9",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "69=6",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "6÷75188=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "308",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "++85=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "06+=4÷744",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7+03579=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×056",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=+91",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "5=+×53",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "38×1=64964",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 38×1 = 38, not 64964."
+ },
+ {
+  "guess": "8=885",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "60÷671=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×4÷=−062+",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=+8×",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "3+57÷6=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=06696",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "=113511",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "−0÷8",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "8−+",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "÷=7465",
+  "length": 6,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "+9=×29",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7−3=+×614",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "95=7",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "÷249=×÷3−",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "58÷−=×7",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "890=571227",
+  "length": 10,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "4×÷3",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "+738=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "7873=013",
+  "length": 8,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 13, not 013."
+ },
+ {
+  "guess": "3452=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=×8−8+91−÷",
+  "length": 10,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "7×÷92+58×",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1766",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=4+×7×38",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "−3×=3−6",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "2366=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "1891568+−",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "44218=×11",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "×58×2×8=1",
+  "length": 9,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "393=02+",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3=82544×+7",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "×78=144−÷2",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "4=75",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "50791",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "0=2−35÷+",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "052+8÷8",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "98+5",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "65815−5=9",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 65815−5 = 65810, not 9."
+ },
+ {
+  "guess": "003+01",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "−2−01=×÷1",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "6=5+3÷5+",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "496××0288",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "÷÷4=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "95−=×",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=96+757−",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "6−0+=2628",
+  "length": 9,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "6=42÷",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=+508518",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "2=37−0",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7−÷012=8×1",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "43÷−=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "+289668=04",
+  "length": 10,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 4, not 04."
+ },
+ {
+  "guess": "=8816",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "76627=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "6277434÷",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "5÷=8÷879×+",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=9−3",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "=÷01",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "86+=8",
+  "length": 5,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "−33+",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "4×9÷=÷+",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1×=0",
+  "length": 4,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "×7+15=××9",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "6207=÷",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=×963",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "=÷77×12÷×6",
+  "length": 10,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "933=77×",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=1×5",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "83+7−=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "539=+",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "−11÷−65×",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "537",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "17640=9854",
+  "length": 10,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "+9×47×=32×",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=2÷87+−",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "=×021171−",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "36=3×26",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=94−÷89",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "9=07",
+  "length": 4,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 7, not 07."
+ },
+ {
+  "guess": "6=43233170",
+  "length": 10,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "133=×48264",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=×667556×",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "÷7×610−=78",
+  "length": 10,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "13120÷=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "÷3−+=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×=+05",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "5×=6",
+  "length": 4,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "×1÷2=+915",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=+629",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "7=2×÷7",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "0+555",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=38+8−75",
+  "length": 8,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "÷8−5−8÷=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "7×033557=8",
+  "length": 10,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 33557, not 033557."
+ },
+ {
+  "guess": "÷+=6314×5",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "0+=2",
+  "length": 4,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "3÷×=0÷206",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷33−÷539÷=",
+  "length": 10,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "÷×02903−",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "61=+0",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "×2=2",
+  "length": 4,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "+8855=÷÷−5",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1+×=÷",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "580=5÷25+1",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "35=8",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "8+8+7891",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "079÷2=5",
+  "length": 7,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 79, not 079."
+ },
+ {
+  "guess": "8−9=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×−3=809283",
+  "length": 10,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "×672+=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "76=1467",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "9267=18×4",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "92=×87272×",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+=5394÷",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+−1÷6=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=8661×",
+  "length": 6,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "1÷02÷97=2",
+  "length": 9,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 2, not 02."
+ },
+ {
+  "guess": "14×9784=96",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 14×9784 = 136976, not 96."
+ },
+ {
+  "guess": "=8+1+÷−",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "−3=−06×÷",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=2−8",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "÷3=98÷3938",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "450+÷=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "97+÷=−+",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7=−7",
+  "length": 4,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "95−5×=×705",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=÷3−25977",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "88=925+0×6",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "0+1216=8−",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "11=8",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "277−=8−0",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "22+751=×",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "0−=205×3",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "34+3×1",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "233−=67+2",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "0=20626",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "9362+65÷7",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "7=÷5÷−34+3",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "+1173=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "16÷2−=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "37+−6893=÷",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "9=32",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "5=10",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "−÷9423×69=",
+  "length": 10,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−142+17=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "55−+2÷=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "÷5×8402=3×",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "258÷8−5=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "862−572=",
+  "length": 8,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−+=34+7",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=525",
+  "length": 4,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "5−10−=÷7",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷949",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "2+×−6+2=0",
+  "length": 9,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (+×)."
+ },
+ {
+  "guess": "876+×+=0",
+  "length": 8,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "0=×406",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8−9946=1",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 8−9946 = −9938, not 1."
+ },
+ {
+  "guess": "0=86+0",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷52=6",
+  "length": 5,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "0=903801",
+  "length": 8,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "×304=−1−×",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "16+19=006",
+  "length": 9,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 6, not 006."
+ },
+ {
+  "guess": "×=÷2÷",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=1092+416÷",
+  "length": 10,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "7=−1",
+  "length": 4,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "2−099−=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "823×+=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "24=2×6−83",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "24324703=÷",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "0−0×=4",
+  "length": 6,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "5÷−×=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×575+2÷",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "=1498",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "5÷3÷82=6×",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=519928",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "537−1=1849",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 537−1 = 536, not 1849."
+ },
+ {
+  "guess": "5×÷",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "−53×56+6=−",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "111=286819",
+  "length": 10,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "18=2÷5",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷715611÷8",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "×=−1901",
+  "length": 7,
+  "ok": false,
+  "code": "negative_answer",
+  "reason": "The answer can't be negative. It must be 0 or more."
+ },
+ {
+  "guess": "+×+=9+98",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "4+6−8÷146",
+  "length": 9,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "793709÷×8=",
+  "length": 10,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "540=×",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "−=×8",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8+÷15=49",
+  "length": 8,
+  "ok": false,
+  "code": "double_operator",
+  "reason": "Two signs can't go next to each other (+÷)."
+ },
+ {
+  "guess": "1−8=0",
+  "length": 5,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 1−8 = −7, not 0."
+ },
+ {
+  "guess": "×÷63=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×605=78−",
+  "length": 8,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8=48",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "=13÷−÷1",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "420÷=0",
+  "length": 6,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "=135+",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "85=621",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "+56",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "549÷37=+8",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "56×7=×",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1=63390",
+  "length": 7,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "−56÷22843=",
+  "length": 10,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−××+8+=4",
+  "length": 8,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Negative numbers aren't allowed. Start with a number."
+ },
+ {
+  "guess": "6713=−",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3×8÷÷0×=−",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "−321=+8+39",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "9=354×+−×",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "54×80",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1÷4÷0+2=5",
+  "length": 9,
+  "ok": false,
+  "code": "divide_by_zero",
+  "reason": "You can't divide by 0."
+ },
+ {
+  "guess": "−÷1=635×98",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "6×−1−=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "1×0=1",
+  "length": 5,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 1×0 = 0, not 1."
+ },
+ {
+  "guess": "9=5÷458",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7=1787−",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1596×=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−+=÷181",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "51630569",
+  "length": 8,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1+40",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "57×1+÷3",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "207−1=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "×88=5×6",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "8×−=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−1433×=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "+÷1÷",
+  "length": 4,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "++=973",
+  "length": 6,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "−78÷=62÷÷",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷8=1477−÷1",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=5074",
+  "length": 5,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "1÷=690",
+  "length": 6,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "+=+75−",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=9−÷706",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "92+371+×=",
+  "length": 9,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "=+7×6332−5",
+  "length": 10,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "969774=+5",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷130=−−",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "1=09×6",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "×9=6×",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷20−=3−",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "30−÷0",
+  "length": 5,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "÷993=",
+  "length": 5,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "4÷=−×",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3−0315=",
+  "length": 7,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "259636=72",
+  "length": 9,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "750=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−97",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "1+960=",
+  "length": 6,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "+0+=÷",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "÷×00−59",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "7÷7=",
+  "length": 4,
+  "ok": false,
+  "code": "empty_right",
+  "reason": "Put the answer after the equals sign."
+ },
+ {
+  "guess": "−448=+2−88",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "90=+551",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "6=8−",
+  "length": 4,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=6×215×",
+  "length": 7,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "12×=××",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "85917−8+=+",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "878+6=4−13",
+  "length": 10,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "93986=87",
+  "length": 8,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "4=8×−3−",
+  "length": 7,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "=85347148",
+  "length": 9,
+  "ok": false,
+  "code": "empty_left",
+  "reason": "Put a sum before the equals sign."
+ },
+ {
+  "guess": "54=43",
+  "length": 5,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "×=068×",
+  "length": 6,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "06+113+=02",
+  "length": 10,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 2, not 02."
+ },
+ {
+  "guess": "×134=070",
+  "length": 8,
+  "ok": false,
+  "code": "leading_zero",
+  "reason": "Numbers can't start with 0: write 70, not 070."
+ },
+ {
+  "guess": "1××7÷29",
+  "length": 7,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "0−=4",
+  "length": 4,
+  "ok": false,
+  "code": "ends_with_operator",
+  "reason": "Put a number between the last sign and the equals sign."
+ },
+ {
+  "guess": "4=48",
+  "length": 4,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "150",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "−÷+",
+  "length": 3,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "27=872",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "×39=604",
+  "length": 7,
+  "ok": false,
+  "code": "starts_with_operator",
+  "reason": "Start with a number, not a sign."
+ },
+ {
+  "guess": "852=63",
+  "length": 6,
+  "ok": false,
+  "code": "no_operator",
+  "reason": "Use at least one sign (+, −, × or ÷) before the equals."
+ },
+ {
+  "guess": "×=8+7",
+  "length": 5,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "3×318÷",
+  "length": 6,
+  "ok": false,
+  "code": "no_equals",
+  "reason": "Every guess needs an equals sign (=)."
+ },
+ {
+  "guess": "0=73−−÷2÷",
+  "length": 9,
+  "ok": false,
+  "code": "right_not_number",
+  "reason": "After the equals sign there must be just one number, like =12."
+ },
+ {
+  "guess": "7×94=30",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7×94 = 658, not 30."
+ },
+ {
+  "guess": "69×55=147",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 69×55 = 3795, not 147."
+ },
+ {
+  "guess": "92−51=149",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 92−51 = 41, not 149."
+ },
+ {
+  "guess": "53÷99+30=178",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 53÷99+30 = 30.54…, not 178."
+ },
+ {
+  "guess": "42+13−5=54",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 42+13−5 = 50, not 54."
+ },
+ {
+  "guess": "32+60=123",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32+60 = 92, not 123."
+ },
+ {
+  "guess": "53−24=79",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 53−24 = 29, not 79."
+ },
+ {
+  "guess": "17+57×14+70=74",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 17+57×14+70 = 885, not 74."
+ },
+ {
+  "guess": "37−85=14",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 37−85 = −48, not 14."
+ },
+ {
+  "guess": "38+41+75+2=119",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 38+41+75+2 = 156, not 119."
+ },
+ {
+  "guess": "45−18+53=112",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 45−18+53 = 80, not 112."
+ },
+ {
+  "guess": "75−59÷28÷20=175",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 75−59÷28÷20 = 74.89…, not 175."
+ },
+ {
+  "guess": "88+25=193",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 88+25 = 113, not 193."
+ },
+ {
+  "guess": "49−51=78",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49−51 = −2, not 78."
+ },
+ {
+  "guess": "12÷53÷96+47=102",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 12÷53÷96+47 = 47.00…, not 102."
+ },
+ {
+  "guess": "85−5=72",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 85−5 = 80, not 72."
+ },
+ {
+  "guess": "83×21−4=164",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 83×21−4 = 1739, not 164."
+ },
+ {
+  "guess": "49−18=141",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49−18 = 31, not 141."
+ },
+ {
+  "guess": "33×41=152",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 33×41 = 1353, not 152."
+ },
+ {
+  "guess": "13×9−65=17",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 13×9−65 = 52, not 17."
+ },
+ {
+  "guess": "96+20×88=95",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 96+20×88 = 1856, not 95."
+ },
+ {
+  "guess": "3+10+48+65=136",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 3+10+48+65 = 126, not 136."
+ },
+ {
+  "guess": "49+0×38−75=23",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49+0×38−75 = −26, not 23."
+ },
+ {
+  "guess": "32−61=16",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32−61 = −29, not 16."
+ },
+ {
+  "guess": "44−65=156",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 44−65 = −21, not 156."
+ },
+ {
+  "guess": "57×19÷70=142",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 57×19÷70 = 15.47…, not 142."
+ },
+ {
+  "guess": "32+37+35=72",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32+37+35 = 104, not 72."
+ },
+ {
+  "guess": "49×94−35÷81=49",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49×94−35÷81 = 4605.57…, not 49."
+ },
+ {
+  "guess": "19×49=26",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 19×49 = 931, not 26."
+ },
+ {
+  "guess": "65×77−67=175",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 65×77−67 = 4938, not 175."
+ },
+ {
+  "guess": "48−51÷67=123",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 48−51÷67 = 47.24…, not 123."
+ },
+ {
+  "guess": "32+20=175",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32+20 = 52, not 175."
+ },
+ {
+  "guess": "14÷36=193",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 14÷36 = 0.39…, not 193."
+ },
+ {
+  "guess": "47÷4÷45=80",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 47÷4÷45 = 0.26…, not 80."
+ },
+ {
+  "guess": "49÷56=73",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49÷56 = 0.875, not 73."
+ },
+ {
+  "guess": "5+8=83",
+  "length": 6,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 5+8 = 13, not 83."
+ },
+ {
+  "guess": "81×85=59",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 81×85 = 6885, not 59."
+ },
+ {
+  "guess": "64+68×40=17",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 64+68×40 = 2784, not 17."
+ },
+ {
+  "guess": "70×35÷54×62=71",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 70×35÷54×62 = 2812.96…, not 71."
+ },
+ {
+  "guess": "43−43−72=71",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 43−43−72 = −72, not 71."
+ },
+ {
+  "guess": "79+96−50÷51=179",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 79+96−50÷51 = 174.02…, not 179."
+ },
+ {
+  "guess": "55×44×73÷21=18",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 55×44×73÷21 = 8412.38…, not 18."
+ },
+ {
+  "guess": "31×53−87=7",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 31×53−87 = 1556, not 7."
+ },
+ {
+  "guess": "16+34=65",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 16+34 = 50, not 65."
+ },
+ {
+  "guess": "21÷34÷1=157",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 21÷34÷1 = 0.62…, not 157."
+ },
+ {
+  "guess": "21×14−85−8=60",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 21×14−85−8 = 201, not 60."
+ },
+ {
+  "guess": "27−1÷18×52=136",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 27−1÷18×52 = 24.11…, not 136."
+ },
+ {
+  "guess": "85−50−13=7",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 85−50−13 = 22, not 7."
+ },
+ {
+  "guess": "55×8−92−43=46",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 55×8−92−43 = 305, not 46."
+ },
+ {
+  "guess": "94−52−25÷96=4",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 94−52−25÷96 = 41.74…, not 4."
+ },
+ {
+  "guess": "56×9−57=196",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 56×9−57 = 447, not 196."
+ },
+ {
+  "guess": "22+63+54=135",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 22+63+54 = 139, not 135."
+ },
+ {
+  "guess": "48−92=166",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 48−92 = −44, not 166."
+ },
+ {
+  "guess": "31÷42+0=126",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 31÷42+0 = 0.74…, not 126."
+ },
+ {
+  "guess": "86+88+39×83=30",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 86+88+39×83 = 3411, not 30."
+ },
+ {
+  "guess": "47×15=2",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 47×15 = 705, not 2."
+ },
+ {
+  "guess": "83−50=139",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 83−50 = 33, not 139."
+ },
+ {
+  "guess": "4÷69÷45×50=189",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 4÷69÷45×50 = 0.06…, not 189."
+ },
+ {
+  "guess": "68×97+9=101",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 68×97+9 = 6605, not 101."
+ },
+ {
+  "guess": "43÷20=102",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 43÷20 = 2.15, not 102."
+ },
+ {
+  "guess": "32×31−89÷52=69",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32×31−89÷52 = 990.29…, not 69."
+ },
+ {
+  "guess": "73×74−19−0=48",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 73×74−19−0 = 5383, not 48."
+ },
+ {
+  "guess": "36×32÷82−60=2",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 36×32÷82−60 = −45.95…, not 2."
+ },
+ {
+  "guess": "95+34=60",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 95+34 = 129, not 60."
+ },
+ {
+  "guess": "16×49−63=158",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 16×49−63 = 721, not 158."
+ },
+ {
+  "guess": "81×44÷92=15",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 81×44÷92 = 38.74…, not 15."
+ },
+ {
+  "guess": "72÷31=82",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 72÷31 = 2.32…, not 82."
+ },
+ {
+  "guess": "45×11−47+69=117",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 45×11−47+69 = 517, not 117."
+ },
+ {
+  "guess": "63−39+86=199",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 63−39+86 = 110, not 199."
+ },
+ {
+  "guess": "73÷47+57=143",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 73÷47+57 = 58.55…, not 143."
+ },
+ {
+  "guess": "53×41−4=187",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 53×41−4 = 2169, not 187."
+ },
+ {
+  "guess": "76−56=87",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 76−56 = 20, not 87."
+ },
+ {
+  "guess": "52+17=4",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52+17 = 69, not 4."
+ },
+ {
+  "guess": "66×23×56=117",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 66×23×56 = 85008, not 117."
+ },
+ {
+  "guess": "47×21÷71=158",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 47×21÷71 = 13.90…, not 158."
+ },
+ {
+  "guess": "99÷70−56=199",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 99÷70−56 = −54.59…, not 199."
+ },
+ {
+  "guess": "9×28÷87+21=152",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 9×28÷87+21 = 23.90…, not 152."
+ },
+ {
+  "guess": "78÷60=51",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78÷60 = 1.3, not 51."
+ },
+ {
+  "guess": "92−5×23=34",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 92−5×23 = −23, not 34."
+ },
+ {
+  "guess": "34÷59−27=26",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 34÷59−27 = −26.42…, not 26."
+ },
+ {
+  "guess": "88×1=99",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 88×1 = 88, not 99."
+ },
+ {
+  "guess": "61+18=61",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 61+18 = 79, not 61."
+ },
+ {
+  "guess": "16+39=134",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 16+39 = 55, not 134."
+ },
+ {
+  "guess": "24−94−14=75",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 24−94−14 = −84, not 75."
+ },
+ {
+  "guess": "13÷74+39−82=51",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 13÷74+39−82 = −42.82…, not 51."
+ },
+ {
+  "guess": "28×6÷82=111",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 28×6÷82 = 2.05…, not 111."
+ },
+ {
+  "guess": "68+37−22=30",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 68+37−22 = 83, not 30."
+ },
+ {
+  "guess": "27−6+82÷67=164",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 27−6+82÷67 = 22.22…, not 164."
+ },
+ {
+  "guess": "26+46=192",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 26+46 = 72, not 192."
+ },
+ {
+  "guess": "54+30−1÷41=121",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 54+30−1÷41 = 83.98…, not 121."
+ },
+ {
+  "guess": "75×92+36÷81=48",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 75×92+36÷81 = 6900.44…, not 48."
+ },
+ {
+  "guess": "91×87−3+81=87",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 91×87−3+81 = 7995, not 87."
+ },
+ {
+  "guess": "11×13=170",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 11×13 = 143, not 170."
+ },
+ {
+  "guess": "58×71×58×48=10",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 58×71×58×48 = 11464512, not 10."
+ },
+ {
+  "guess": "17×73÷76=183",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 17×73÷76 = 16.33…, not 183."
+ },
+ {
+  "guess": "1+30×8=11",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 1+30×8 = 241, not 11."
+ },
+ {
+  "guess": "12+58−55=158",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 12+58−55 = 15, not 158."
+ },
+ {
+  "guess": "59÷6+3÷94=70",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 59÷6+3÷94 = 9.87…, not 70."
+ },
+ {
+  "guess": "39+86=63",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 39+86 = 125, not 63."
+ },
+ {
+  "guess": "97×83=134",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 97×83 = 8051, not 134."
+ },
+ {
+  "guess": "27÷85=46",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 27÷85 = 0.32…, not 46."
+ },
+ {
+  "guess": "73+15=75",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 73+15 = 88, not 75."
+ },
+ {
+  "guess": "42+59+82=185",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 42+59+82 = 183, not 185."
+ },
+ {
+  "guess": "23+54+99=8",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 23+54+99 = 176, not 8."
+ },
+ {
+  "guess": "77+55×47×13=81",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 77+55×47×13 = 33682, not 81."
+ },
+ {
+  "guess": "32+23−26=195",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32+23−26 = 29, not 195."
+ },
+ {
+  "guess": "7−78÷32×21=140",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7−78÷32×21 = −44.1875, not 140."
+ },
+ {
+  "guess": "84+26=5",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 84+26 = 110, not 5."
+ },
+ {
+  "guess": "39×85−91×69=100",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 39×85−91×69 = −2964, not 100."
+ },
+ {
+  "guess": "46÷45÷49÷48=149",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 46÷45÷49÷48 = 0.00…, not 149."
+ },
+ {
+  "guess": "67×7+69=20",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 67×7+69 = 538, not 20."
+ },
+ {
+  "guess": "14÷14−81×71=140",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 14÷14−81×71 = −5750, not 140."
+ },
+ {
+  "guess": "82÷6+19=61",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 82÷6+19 = 32.67…, not 61."
+ },
+ {
+  "guess": "90−2=131",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 90−2 = 88, not 131."
+ },
+ {
+  "guess": "4−91=189",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 4−91 = −87, not 189."
+ },
+ {
+  "guess": "52+29=126",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52+29 = 81, not 126."
+ },
+ {
+  "guess": "64+85−86÷57=49",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 64+85−86÷57 = 147.49…, not 49."
+ },
+ {
+  "guess": "98÷22=69",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 98÷22 = 4.45…, not 69."
+ },
+ {
+  "guess": "80×38−8+66=57",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 80×38−8+66 = 3098, not 57."
+ },
+ {
+  "guess": "83×31=66",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 83×31 = 2573, not 66."
+ },
+ {
+  "guess": "30÷95−38=20",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 30÷95−38 = −37.68…, not 20."
+ },
+ {
+  "guess": "7÷82÷39+1=48",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7÷82÷39+1 = 1.00…, not 48."
+ },
+ {
+  "guess": "65−84+91=180",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 65−84+91 = 72, not 180."
+ },
+ {
+  "guess": "74−2=51",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 74−2 = 72, not 51."
+ },
+ {
+  "guess": "52−29×97=177",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52−29×97 = −2761, not 177."
+ },
+ {
+  "guess": "42−7=57",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 42−7 = 35, not 57."
+ },
+ {
+  "guess": "12−20−44=52",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 12−20−44 = −52, not 52."
+ },
+ {
+  "guess": "78÷87÷75=177",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78÷87÷75 = 0.01…, not 177."
+ },
+ {
+  "guess": "40÷22+37+52=33",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 40÷22+37+52 = 90.82…, not 33."
+ },
+ {
+  "guess": "73×21×35−97=166",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 73×21×35−97 = 53558, not 166."
+ },
+ {
+  "guess": "85+8=55",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 85+8 = 93, not 55."
+ },
+ {
+  "guess": "31×13=165",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 31×13 = 403, not 165."
+ },
+ {
+  "guess": "89+25=81",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 89+25 = 114, not 81."
+ },
+ {
+  "guess": "78−13+73÷86=11",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78−13+73÷86 = 65.85…, not 11."
+ },
+ {
+  "guess": "38+51=183",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 38+51 = 89, not 183."
+ },
+ {
+  "guess": "4−38+84=72",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 4−38+84 = 50, not 72."
+ },
+ {
+  "guess": "75−55÷99+66=83",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 75−55÷99+66 = 140.44…, not 83."
+ },
+ {
+  "guess": "40×90=72",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 40×90 = 3600, not 72."
+ },
+ {
+  "guess": "99×43=79",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 99×43 = 4257, not 79."
+ },
+ {
+  "guess": "58−24=55",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 58−24 = 34, not 55."
+ },
+ {
+  "guess": "75−89+82+12=96",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 75−89+82+12 = 80, not 96."
+ },
+ {
+  "guess": "59÷70−51=87",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 59÷70−51 = −50.16…, not 87."
+ },
+ {
+  "guess": "18+45×89=148",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 18+45×89 = 4023, not 148."
+ },
+ {
+  "guess": "56÷48−11×13=71",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 56÷48−11×13 = −141.83…, not 71."
+ },
+ {
+  "guess": "85−56=177",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 85−56 = 29, not 177."
+ },
+ {
+  "guess": "68−5−40=96",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 68−5−40 = 23, not 96."
+ },
+ {
+  "guess": "10×92+57=135",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 10×92+57 = 977, not 135."
+ },
+ {
+  "guess": "17÷99+31=178",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 17÷99+31 = 31.17…, not 178."
+ },
+ {
+  "guess": "32−50+11=44",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32−50+11 = −7, not 44."
+ },
+ {
+  "guess": "74+95=106",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 74+95 = 169, not 106."
+ },
+ {
+  "guess": "34÷60÷86+80=86",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 34÷60÷86+80 = 80.01…, not 86."
+ },
+ {
+  "guess": "44+28=79",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 44+28 = 72, not 79."
+ },
+ {
+  "guess": "33+21=117",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 33+21 = 54, not 117."
+ },
+ {
+  "guess": "87÷92=103",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 87÷92 = 0.95…, not 103."
+ },
+ {
+  "guess": "73×20÷54+69=43",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 73×20÷54+69 = 96.04…, not 43."
+ },
+ {
+  "guess": "94÷1=32",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 94÷1 = 94, not 32."
+ },
+ {
+  "guess": "10+79−70−69=49",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 10+79−70−69 = −50, not 49."
+ },
+ {
+  "guess": "0−21×98=164",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 0−21×98 = −2058, not 164."
+ },
+ {
+  "guess": "55÷38+41÷25=129",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 55÷38+41÷25 = 3.09…, not 129."
+ },
+ {
+  "guess": "50÷26=112",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 50÷26 = 1.92…, not 112."
+ },
+ {
+  "guess": "11−78÷54×92=125",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 11−78÷54×92 = −121.89…, not 125."
+ },
+ {
+  "guess": "23+26÷21=24",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 23+26÷21 = 24.24…, not 24."
+ },
+ {
+  "guess": "14+43=108",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 14+43 = 57, not 108."
+ },
+ {
+  "guess": "43+38−5×37=15",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 43+38−5×37 = −104, not 15."
+ },
+ {
+  "guess": "8×79+68−5=100",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 8×79+68−5 = 695, not 100."
+ },
+ {
+  "guess": "71+7×17=148",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 71+7×17 = 190, not 148."
+ },
+ {
+  "guess": "63×80−21+80=135",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 63×80−21+80 = 5099, not 135."
+ },
+ {
+  "guess": "9×57+63×32=96",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 9×57+63×32 = 2529, not 96."
+ },
+ {
+  "guess": "25×36×71−84=57",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 25×36×71−84 = 63816, not 57."
+ },
+ {
+  "guess": "78÷75−99=26",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78÷75−99 = −97.96, not 26."
+ },
+ {
+  "guess": "35+3+29=13",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 35+3+29 = 67, not 13."
+ },
+ {
+  "guess": "73÷78=22",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 73÷78 = 0.94…, not 22."
+ },
+ {
+  "guess": "36×16÷22+23=112",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 36×16÷22+23 = 49.18…, not 112."
+ },
+ {
+  "guess": "69÷64=143",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 69÷64 = 1.078125, not 143."
+ },
+ {
+  "guess": "23+54−17=112",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 23+54−17 = 60, not 112."
+ },
+ {
+  "guess": "60−98÷17=36",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 60−98÷17 = 54.24…, not 36."
+ },
+ {
+  "guess": "46−15=55",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 46−15 = 31, not 55."
+ },
+ {
+  "guess": "25+17÷29=140",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 25+17÷29 = 25.59…, not 140."
+ },
+ {
+  "guess": "17+18=45",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 17+18 = 35, not 45."
+ },
+ {
+  "guess": "91÷43÷2÷36=170",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 91÷43÷2÷36 = 0.03…, not 170."
+ },
+ {
+  "guess": "42×66÷27+2=137",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 42×66÷27+2 = 104.67…, not 137."
+ },
+ {
+  "guess": "17+82+71=173",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 17+82+71 = 170, not 173."
+ },
+ {
+  "guess": "25×69=95",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 25×69 = 1725, not 95."
+ },
+ {
+  "guess": "23÷17÷45+1=95",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 23÷17÷45+1 = 1.03…, not 95."
+ },
+ {
+  "guess": "78÷50+95×76=62",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78÷50+95×76 = 7221.56, not 62."
+ },
+ {
+  "guess": "81+15÷83=95",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 81+15÷83 = 81.18…, not 95."
+ },
+ {
+  "guess": "98−91=25",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 98−91 = 7, not 25."
+ },
+ {
+  "guess": "59−66−73+82=100",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 59−66−73+82 = 2, not 100."
+ },
+ {
+  "guess": "92−74÷22−95=15",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 92−74÷22−95 = −6.36…, not 15."
+ },
+ {
+  "guess": "83×99+75+97=14",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 83×99+75+97 = 8389, not 14."
+ },
+ {
+  "guess": "10−69+79=100",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 10−69+79 = 20, not 100."
+ },
+ {
+  "guess": "85×6=199",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 85×6 = 510, not 199."
+ },
+ {
+  "guess": "49+69=151",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49+69 = 118, not 151."
+ },
+ {
+  "guess": "98÷41×72+48=148",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 98÷41×72+48 = 220.10…, not 148."
+ },
+ {
+  "guess": "46÷69×66=43",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 46÷69×66 = 44, not 43."
+ },
+ {
+  "guess": "61÷5×43+11=67",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 61÷5×43+11 = 535.6, not 67."
+ },
+ {
+  "guess": "7+78×61=67",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7+78×61 = 4765, not 67."
+ },
+ {
+  "guess": "50÷92×61=27",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 50÷92×61 = 33.15…, not 27."
+ },
+ {
+  "guess": "74−88−59=120",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 74−88−59 = −73, not 120."
+ },
+ {
+  "guess": "6−34−81=119",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 6−34−81 = −109, not 119."
+ },
+ {
+  "guess": "76÷2=55",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 76÷2 = 38, not 55."
+ },
+ {
+  "guess": "32÷18−61=199",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32÷18−61 = −59.22…, not 199."
+ },
+ {
+  "guess": "11×76÷40=153",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 11×76÷40 = 20.9, not 153."
+ },
+ {
+  "guess": "7−38+19=30",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7−38+19 = −12, not 30."
+ },
+ {
+  "guess": "25÷67−82×73=101",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 25÷67−82×73 = −5985.63…, not 101."
+ },
+ {
+  "guess": "26×46+7−51=141",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 26×46+7−51 = 1152, not 141."
+ },
+ {
+  "guess": "85×77−58=112",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 85×77−58 = 6487, not 112."
+ },
+ {
+  "guess": "6+3=89",
+  "length": 6,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 6+3 = 9, not 89."
+ },
+ {
+  "guess": "13×19=1",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 13×19 = 247, not 1."
+ },
+ {
+  "guess": "2×72+4+38=87",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2×72+4+38 = 186, not 87."
+ },
+ {
+  "guess": "45×25=14",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 45×25 = 1125, not 14."
+ },
+ {
+  "guess": "46÷12×75+1=8",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 46÷12×75+1 = 288.5, not 8."
+ },
+ {
+  "guess": "4×57=44",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 4×57 = 228, not 44."
+ },
+ {
+  "guess": "74+50=14",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 74+50 = 124, not 14."
+ },
+ {
+  "guess": "72+86×4÷59=1",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 72+86×4÷59 = 77.83…, not 1."
+ },
+ {
+  "guess": "56÷10=173",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 56÷10 = 5.6, not 173."
+ },
+ {
+  "guess": "51×19×42+40=27",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 51×19×42+40 = 40738, not 27."
+ },
+ {
+  "guess": "98−0÷84=16",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 98−0÷84 = 98, not 16."
+ },
+ {
+  "guess": "3−61=182",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 3−61 = −58, not 182."
+ },
+ {
+  "guess": "59−10=182",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 59−10 = 49, not 182."
+ },
+ {
+  "guess": "54÷66=44",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 54÷66 = 0.82…, not 44."
+ },
+ {
+  "guess": "3−60+99−55=1",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 3−60+99−55 = −13, not 1."
+ },
+ {
+  "guess": "11−31×70×83=42",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 11−31×70×83 = −180099, not 42."
+ },
+ {
+  "guess": "54−95×14+57=131",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 54−95×14+57 = −1219, not 131."
+ },
+ {
+  "guess": "41−79−16÷88=146",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 41−79−16÷88 = −38.18…, not 146."
+ },
+ {
+  "guess": "12+27+35−19=161",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 12+27+35−19 = 55, not 161."
+ },
+ {
+  "guess": "6÷23÷97=172",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 6÷23÷97 = 0.00…, not 172."
+ },
+ {
+  "guess": "20×17+14=195",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 20×17+14 = 354, not 195."
+ },
+ {
+  "guess": "56÷31=31",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 56÷31 = 1.81…, not 31."
+ },
+ {
+  "guess": "52+61=135",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52+61 = 113, not 135."
+ },
+ {
+  "guess": "1−11÷64−49=2",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 1−11÷64−49 = −48.171875, not 2."
+ },
+ {
+  "guess": "95−84=164",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 95−84 = 11, not 164."
+ },
+ {
+  "guess": "66×91÷27=4",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 66×91÷27 = 222.44…, not 4."
+ },
+ {
+  "guess": "94+40=153",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 94+40 = 134, not 153."
+ },
+ {
+  "guess": "11÷26+36=9",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 11÷26+36 = 36.42…, not 9."
+ },
+ {
+  "guess": "64+8=81",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 64+8 = 72, not 81."
+ },
+ {
+  "guess": "3×85÷7−42=54",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 3×85÷7−42 = −5.57…, not 54."
+ },
+ {
+  "guess": "98÷66=128",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 98÷66 = 1.48…, not 128."
+ },
+ {
+  "guess": "17×0÷47=173",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 17×0÷47 = 0, not 173."
+ },
+ {
+  "guess": "62−43÷91×50=188",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 62−43÷91×50 = 38.37…, not 188."
+ },
+ {
+  "guess": "7÷88=194",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7÷88 = 0.08…, not 194."
+ },
+ {
+  "guess": "30+14÷65+78=74",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 30+14÷65+78 = 108.22…, not 74."
+ },
+ {
+  "guess": "25+51×62=41",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 25+51×62 = 3187, not 41."
+ },
+ {
+  "guess": "28−11+62=197",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 28−11+62 = 79, not 197."
+ },
+ {
+  "guess": "65−4=27",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 65−4 = 61, not 27."
+ },
+ {
+  "guess": "88+73=111",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 88+73 = 161, not 111."
+ },
+ {
+  "guess": "2−62=6",
+  "length": 6,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2−62 = −60, not 6."
+ },
+ {
+  "guess": "28−36+19=47",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 28−36+19 = 11, not 47."
+ },
+ {
+  "guess": "60×33+87÷63=157",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 60×33+87÷63 = 1981.38…, not 157."
+ },
+ {
+  "guess": "97+12−68=172",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 97+12−68 = 41, not 172."
+ },
+ {
+  "guess": "45×81=0",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 45×81 = 3645, not 0."
+ },
+ {
+  "guess": "34−52=186",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 34−52 = −18, not 186."
+ },
+ {
+  "guess": "8+41÷32=84",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 8+41÷32 = 9.28125, not 84."
+ },
+ {
+  "guess": "6−14=106",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 6−14 = −8, not 106."
+ },
+ {
+  "guess": "60−14−72−81=115",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 60−14−72−81 = −107, not 115."
+ },
+ {
+  "guess": "97×97÷28−74=130",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 97×97÷28−74 = 262.04…, not 130."
+ },
+ {
+  "guess": "91÷4=47",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 91÷4 = 22.75, not 47."
+ },
+ {
+  "guess": "78÷5=79",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78÷5 = 15.6, not 79."
+ },
+ {
+  "guess": "71÷33=81",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 71÷33 = 2.15…, not 81."
+ },
+ {
+  "guess": "43+17=181",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 43+17 = 60, not 181."
+ },
+ {
+  "guess": "72×15+49×81=195",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 72×15+49×81 = 5049, not 195."
+ },
+ {
+  "guess": "27÷96−55=41",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 27÷96−55 = −54.71875, not 41."
+ },
+ {
+  "guess": "78+44=69",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78+44 = 122, not 69."
+ },
+ {
+  "guess": "0+90÷60×87=1",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 0+90÷60×87 = 130.5, not 1."
+ },
+ {
+  "guess": "52÷47÷9=158",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52÷47÷9 = 0.12…, not 158."
+ },
+ {
+  "guess": "64+65−38=31",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 64+65−38 = 91, not 31."
+ },
+ {
+  "guess": "77×62−64×47=31",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 77×62−64×47 = 1766, not 31."
+ },
+ {
+  "guess": "27÷37=101",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 27÷37 = 0.73…, not 101."
+ },
+ {
+  "guess": "38+47×14=124",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 38+47×14 = 696, not 124."
+ },
+ {
+  "guess": "41×13÷92−81=58",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 41×13÷92−81 = −75.21…, not 58."
+ },
+ {
+  "guess": "33+30÷43+69=89",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 33+30÷43+69 = 102.70…, not 89."
+ },
+ {
+  "guess": "83×84+31=98",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 83×84+31 = 7003, not 98."
+ },
+ {
+  "guess": "79×92+77=171",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 79×92+77 = 7345, not 171."
+ },
+ {
+  "guess": "9÷9=179",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 9÷9 = 1, not 179."
+ },
+ {
+  "guess": "32÷95=167",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32÷95 = 0.34…, not 167."
+ },
+ {
+  "guess": "7×69+62+13=68",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 7×69+62+13 = 558, not 68."
+ },
+ {
+  "guess": "37×34=102",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 37×34 = 1258, not 102."
+ },
+ {
+  "guess": "11−4=3",
+  "length": 6,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 11−4 = 7, not 3."
+ },
+ {
+  "guess": "54−4=40",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 54−4 = 50, not 40."
+ },
+ {
+  "guess": "12÷5+0×20=113",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 12÷5+0×20 = 2.4, not 113."
+ },
+ {
+  "guess": "36×89+57=6",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 36×89+57 = 3261, not 6."
+ },
+ {
+  "guess": "68+12×42÷37=171",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 68+12×42÷37 = 81.62…, not 171."
+ },
+ {
+  "guess": "14×56+4×38=181",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 14×56+4×38 = 936, not 181."
+ },
+ {
+  "guess": "84×0×1=55",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 84×0×1 = 0, not 55."
+ },
+ {
+  "guess": "24×89=166",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 24×89 = 2136, not 166."
+ },
+ {
+  "guess": "52−83×84=104",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52−83×84 = −6920, not 104."
+ },
+ {
+  "guess": "59÷8+72÷80=175",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 59÷8+72÷80 = 8.275, not 175."
+ },
+ {
+  "guess": "61−40×22=156",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 61−40×22 = −819, not 156."
+ },
+ {
+  "guess": "52÷31−27÷22=164",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52÷31−27÷22 = 0.45…, not 164."
+ },
+ {
+  "guess": "57+37×94=134",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 57+37×94 = 3535, not 134."
+ },
+ {
+  "guess": "18+50=37",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 18+50 = 68, not 37."
+ },
+ {
+  "guess": "72×58+18=98",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 72×58+18 = 4194, not 98."
+ },
+ {
+  "guess": "28÷47÷28+92=141",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 28÷47÷28+92 = 92.02…, not 141."
+ },
+ {
+  "guess": "66−44=85",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 66−44 = 22, not 85."
+ },
+ {
+  "guess": "61÷47−75=165",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 61÷47−75 = −73.70…, not 165."
+ },
+ {
+  "guess": "62×95−45=55",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 62×95−45 = 5845, not 55."
+ },
+ {
+  "guess": "9+32=100",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 9+32 = 41, not 100."
+ },
+ {
+  "guess": "39×73+74=148",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 39×73+74 = 2921, not 148."
+ },
+ {
+  "guess": "22÷69=191",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 22÷69 = 0.32…, not 191."
+ },
+ {
+  "guess": "21−70+37−81=43",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 21−70+37−81 = −93, not 43."
+ },
+ {
+  "guess": "28÷24−23=136",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 28÷24−23 = −21.83…, not 136."
+ },
+ {
+  "guess": "48−59÷60÷55=82",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 48−59÷60÷55 = 47.98…, not 82."
+ },
+ {
+  "guess": "41+60×90×10=79",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 41+60×90×10 = 54041, not 79."
+ },
+ {
+  "guess": "60−83+24=56",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 60−83+24 = 1, not 56."
+ },
+ {
+  "guess": "29÷87−69=20",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 29÷87−69 = −68.67…, not 20."
+ },
+ {
+  "guess": "72×13=29",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 72×13 = 936, not 29."
+ },
+ {
+  "guess": "19−43=102",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 19−43 = −24, not 102."
+ },
+ {
+  "guess": "10×42=80",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 10×42 = 420, not 80."
+ },
+ {
+  "guess": "74×50×30=23",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 74×50×30 = 111000, not 23."
+ },
+ {
+  "guess": "76+34−68÷67=116",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 76+34−68÷67 = 108.99…, not 116."
+ },
+ {
+  "guess": "54÷87=146",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 54÷87 = 0.62…, not 146."
+ },
+ {
+  "guess": "27÷48×17+24=69",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 27÷48×17+24 = 33.5625, not 69."
+ },
+ {
+  "guess": "68×83+89=163",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 68×83+89 = 5733, not 163."
+ },
+ {
+  "guess": "4×2+86=29",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 4×2+86 = 94, not 29."
+ },
+ {
+  "guess": "18÷28=75",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 18÷28 = 0.64…, not 75."
+ },
+ {
+  "guess": "29÷51÷82=160",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 29÷51÷82 = 0.01…, not 160."
+ },
+ {
+  "guess": "43+45+9=91",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 43+45+9 = 97, not 91."
+ },
+ {
+  "guess": "90−86−96÷99=12",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 90−86−96÷99 = 3.03…, not 12."
+ },
+ {
+  "guess": "99÷57=185",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 99÷57 = 1.74…, not 185."
+ },
+ {
+  "guess": "12−26=150",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 12−26 = −14, not 150."
+ },
+ {
+  "guess": "87×93−27÷39=115",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 87×93−27÷39 = 8090.31…, not 115."
+ },
+ {
+  "guess": "11+80÷38=131",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 11+80÷38 = 13.11…, not 131."
+ },
+ {
+  "guess": "19÷52=152",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 19÷52 = 0.37…, not 152."
+ },
+ {
+  "guess": "37+9+86÷37=69",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 37+9+86÷37 = 48.32…, not 69."
+ },
+ {
+  "guess": "57×50=87",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 57×50 = 2850, not 87."
+ },
+ {
+  "guess": "93×11÷17−65=7",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 93×11÷17−65 = −4.82…, not 7."
+ },
+ {
+  "guess": "75+1=36",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 75+1 = 76, not 36."
+ },
+ {
+  "guess": "51+46=190",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 51+46 = 97, not 190."
+ },
+ {
+  "guess": "32×11=33",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 32×11 = 352, not 33."
+ },
+ {
+  "guess": "63+18−68=118",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 63+18−68 = 13, not 118."
+ },
+ {
+  "guess": "58+22=95",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 58+22 = 80, not 95."
+ },
+ {
+  "guess": "47÷44÷63=70",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 47÷44÷63 = 0.02…, not 70."
+ },
+ {
+  "guess": "60÷78+31×36=190",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 60÷78+31×36 = 1116.77…, not 190."
+ },
+ {
+  "guess": "2−80=93",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2−80 = −78, not 93."
+ },
+ {
+  "guess": "78+25×74=115",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 78+25×74 = 1928, not 115."
+ },
+ {
+  "guess": "49÷36+20=14",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49÷36+20 = 21.36…, not 14."
+ },
+ {
+  "guess": "49÷23=128",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 49÷23 = 2.13…, not 128."
+ },
+ {
+  "guess": "47÷7=100",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 47÷7 = 6.71…, not 100."
+ },
+ {
+  "guess": "36+23−1=4",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 36+23−1 = 58, not 4."
+ },
+ {
+  "guess": "75÷92−3=147",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 75÷92−3 = −2.18…, not 147."
+ },
+ {
+  "guess": "82×73×12=43",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 82×73×12 = 71832, not 43."
+ },
+ {
+  "guess": "1−26−44×59=76",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 1−26−44×59 = −2621, not 76."
+ },
+ {
+  "guess": "51÷54÷83+34=170",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 51÷54÷83+34 = 34.01…, not 170."
+ },
+ {
+  "guess": "73÷39=138",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 73÷39 = 1.87…, not 138."
+ },
+ {
+  "guess": "69×56×23=151",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 69×56×23 = 88872, not 151."
+ },
+ {
+  "guess": "52−0=15",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52−0 = 52, not 15."
+ },
+ {
+  "guess": "86−68=70",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 86−68 = 18, not 70."
+ },
+ {
+  "guess": "60−0×20=141",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 60−0×20 = 60, not 141."
+ },
+ {
+  "guess": "35÷84=166",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 35÷84 = 0.42…, not 166."
+ },
+ {
+  "guess": "84+34×62=72",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 84+34×62 = 2192, not 72."
+ },
+ {
+  "guess": "19×9−84÷57=95",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 19×9−84÷57 = 169.53…, not 95."
+ },
+ {
+  "guess": "0+42=77",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 0+42 = 42, not 77."
+ },
+ {
+  "guess": "70−82×86=167",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 70−82×86 = −6982, not 167."
+ },
+ {
+  "guess": "22−83÷43=128",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 22−83÷43 = 20.07…, not 128."
+ },
+ {
+  "guess": "87×68+58−78=139",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 87×68+58−78 = 5896, not 139."
+ },
+ {
+  "guess": "35−46=163",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 35−46 = −11, not 163."
+ },
+ {
+  "guess": "93−39−90=80",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 93−39−90 = −36, not 80."
+ },
+ {
+  "guess": "14÷14×29−34=9",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 14÷14×29−34 = −5, not 9."
+ },
+ {
+  "guess": "44÷81=171",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 44÷81 = 0.54…, not 171."
+ },
+ {
+  "guess": "6×47=70",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 6×47 = 282, not 70."
+ },
+ {
+  "guess": "42+55+26=89",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 42+55+26 = 123, not 89."
+ },
+ {
+  "guess": "2+25=147",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2+25 = 27, not 147."
+ },
+ {
+  "guess": "24−37+17=6",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 24−37+17 = 4, not 6."
+ },
+ {
+  "guess": "86−25=80",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 86−25 = 61, not 80."
+ },
+ {
+  "guess": "68÷31×31=64",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 68÷31×31 = 68, not 64."
+ },
+ {
+  "guess": "39−72−84+28=35",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 39−72−84+28 = −89, not 35."
+ },
+ {
+  "guess": "61+46=50",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 61+46 = 107, not 50."
+ },
+ {
+  "guess": "26÷39+0=66",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 26÷39+0 = 0.67…, not 66."
+ },
+ {
+  "guess": "26÷70+80÷37=15",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 26÷70+80÷37 = 2.53…, not 15."
+ },
+ {
+  "guess": "67+76÷49=79",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 67+76÷49 = 68.55…, not 79."
+ },
+ {
+  "guess": "39÷0÷80=103",
+  "length": 11,
+  "ok": false,
+  "code": "divide_by_zero",
+  "reason": "You can't divide by 0."
+ },
+ {
+  "guess": "90+39=50",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 90+39 = 129, not 50."
+ },
+ {
+  "guess": "69÷58+12+4=66",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 69÷58+12+4 = 17.19…, not 66."
+ },
+ {
+  "guess": "3−76×96=119",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 3−76×96 = −7293, not 119."
+ },
+ {
+  "guess": "4+41×41−19=117",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 4+41×41−19 = 1666, not 117."
+ },
+ {
+  "guess": "93÷88÷55=36",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 93÷88÷55 = 0.02…, not 36."
+ },
+ {
+  "guess": "38+97−85=175",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 38+97−85 = 50, not 175."
+ },
+ {
+  "guess": "2−60+14−96=70",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 2−60+14−96 = −140, not 70."
+ },
+ {
+  "guess": "41−66=145",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 41−66 = −25, not 145."
+ },
+ {
+  "guess": "74+79=45",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 74+79 = 153, not 45."
+ },
+ {
+  "guess": "82÷44+88÷82=134",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 82÷44+88÷82 = 2.94…, not 134."
+ },
+ {
+  "guess": "5÷44÷69=174",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 5÷44÷69 = 0.00…, not 174."
+ },
+ {
+  "guess": "85÷85−68−4=144",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 85÷85−68−4 = −71, not 144."
+ },
+ {
+  "guess": "34+79×29÷79=82",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 34+79×29÷79 = 63, not 82."
+ },
+ {
+  "guess": "0+17+36÷0=122",
+  "length": 13,
+  "ok": false,
+  "code": "divide_by_zero",
+  "reason": "You can't divide by 0."
+ },
+ {
+  "guess": "31+21−83=195",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 31+21−83 = −31, not 195."
+ },
+ {
+  "guess": "84−9=101",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 84−9 = 75, not 101."
+ },
+ {
+  "guess": "19+9+81=6",
+  "length": 9,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 19+9+81 = 109, not 6."
+ },
+ {
+  "guess": "42×65×88÷91=168",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 42×65×88÷91 = 2640, not 168."
+ },
+ {
+  "guess": "95−52×87=65",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 95−52×87 = −4429, not 65."
+ },
+ {
+  "guess": "44−80÷40+53=94",
+  "length": 14,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 44−80÷40+53 = 95, not 94."
+ },
+ {
+  "guess": "29÷28+74÷14=108",
+  "length": 15,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 29÷28+74÷14 = 6.32…, not 108."
+ },
+ {
+  "guess": "64÷62=44",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 64÷62 = 1.03…, not 44."
+ },
+ {
+  "guess": "52×16÷83×18=3",
+  "length": 13,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 52×16÷83×18 = 180.43…, not 3."
+ },
+ {
+  "guess": "43÷79−83=86",
+  "length": 11,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 43÷79−83 = −82.46…, not 86."
+ },
+ {
+  "guess": "5+23÷66=74",
+  "length": 10,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 5+23÷66 = 5.35…, not 74."
+ },
+ {
+  "guess": "79÷96÷30=119",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 79÷96÷30 = 0.03…, not 119."
+ },
+ {
+  "guess": "13×48=76",
+  "length": 8,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 13×48 = 624, not 76."
+ },
+ {
+  "guess": "16−18=0",
+  "length": 7,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 16−18 = −2, not 0."
+ },
+ {
+  "guess": "64−80×29=105",
+  "length": 12,
+  "ok": false,
+  "code": "not_true",
+  "reason": "That sum isn't true: 64−80×29 = −2256, not 105."
+ },
+ {
+  "guess": "1+1+8=10",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "1+7×6=43",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "10+89=99",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "10÷5÷2=1",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "11+68=79",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "12+24=36",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "12÷4−1=2",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "13+70=83",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "14+2−9=7",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "14−4−3=7",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "156÷78=2",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "16+63=79",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "16−9−2=5",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "17−6−4=7",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "18×9=162",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "19+71=90",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "2+24÷8=5",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "20+24=44",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "21+10=31",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "21−8−6=7",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "23+12=35",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "24+38=62",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "25+23=48",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "26+47=73",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "270÷5=54",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "288÷3=96",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "29−3×7=8",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "2×73=146",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "3+3+4=10",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "30+30=60",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "31+44=75",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "329÷47=7",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "33−4×8=1",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "35+43=78",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "364÷91=4",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "37×6=222",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "39+23=62",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "3×3×7=63",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "3×8+7=31",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "4+4+5=13",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "40+45=85",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "41×5=205",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "42−29=13",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "44+51=95",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "45÷9+3=8",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "47+26=73",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "48÷3÷8=2",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "49−30=19",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "4×5−7=13",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "4×9−28=8",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "5+6−1=10",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "50−21=29",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "52+36=88",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "53−31=22",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "55+30=85",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "56÷7−6=2",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "58+16=74",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "59−24=35",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "5×59=295",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "5×90=450",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "6+6+4=16",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "60÷3÷4=5",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "61−49=12",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "63÷9−1=6",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "64−54=10",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "66−15=51",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "68+26=94",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "69−50=19",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "6×5÷2=15",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "6×9+6=60",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "7+4×3=19",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "70+16=86",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "71−36=35",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "73+12=85",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "74−49=25",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "76−25=51",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "784÷98=8",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "79−63=16",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "7×5−29=6",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "7×99=693",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "8+5×5=33",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "80×4=320",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "81−50=31",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "83−40=43",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "85×9=765",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "86−9×9=5",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "88−59=29",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "8×3+5=29",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "8×6−43=5",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "8÷4×6=12",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "9+5+9=23",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "9+9−8=10",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "91−45=46",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "93−30=63",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "95×7=665",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "96−49=47",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "98÷7−9=5",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "99−57=42",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "9×4−34=2",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ },
+ {
+  "guess": "9×8÷3=24",
+  "length": 8,
+  "ok": true,
+  "code": null,
+  "reason": null
+ }
+]
