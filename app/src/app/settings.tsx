@@ -1,3 +1,4 @@
+import Constants from "expo-constants";
 import { router } from "expo-router";
 import { Platform, Pressable, ScrollView, StyleSheet, Switch, View } from "react-native";
 
@@ -10,6 +11,10 @@ import { BRAND } from "@/services/brand";
 import { useSettings, type Appearance } from "@/state/settings";
 import { useTheme } from "@/theme/ThemeProvider";
 import type { TextScale } from "@/theme/typography";
+
+const VERSION = [Constants.expoConfig?.version, Constants.expoConfig?.ios?.buildNumber && `(${Constants.expoConfig.ios.buildNumber})`]
+  .filter(Boolean)
+  .join(" ");
 
 export default function Settings() {
   const s = useSettings();
@@ -65,7 +70,7 @@ export default function Settings() {
         </Section>
 
         <AppText muted variant="small" align="center">
-          {BRAND.name} · version 0.1
+          {BRAND.name} · version {VERSION}
         </AppText>
       </ScrollView>
     </Screen>

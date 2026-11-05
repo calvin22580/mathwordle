@@ -1,5 +1,5 @@
 import { isWin, MAX_GUESSES, validate, type Mark } from "@sumsleuth/engine";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type { BoardRow } from "@/components/Board";
 import { FLIP_MS, FLIP_STAGGER_MS } from "@/components/Tile";
@@ -13,10 +13,17 @@ export type Status = "playing" | "won" | "lost";
 
 const RANK: Record<Mark, number> = { absent: 0, present: 1, correct: 2 };
 
-export function useGame(length: number, scorer: Scorer, maxGuesses = MAX_GUESSES) {
-  const [rows, setRows] = useState<BoardRow[]>([]);
+/** Where a finished or half-played game stands, from its rows alone. */
+export function statusOf(rows: BoardRow[], maxGuesses = MAX_GUESSES): Status {
+  const last = rows[rows.length - 1];
+  if (last && isWin(last.marks)) return "won";
+  return rows.length >= maxGuesses ? "lost" : "playing";
+}
+
+export function useGame(length: number, scorer: Scorer, maxGuesses = MAX_GUESSES, initialRows: BoardRow[] = []) {
+  const [rows, setRows] = useState<BoardRow[]>(initialRows);
   const [current, setCurrent] = useState("");
-  const [status, setStatus] = useState<Status>("playing");
+  const [status, setStatus] = useState<Status>(() => statusOf(initialRows, maxGuesses));
   const [error, setError] = useState<{ message: string; id: number } | null>(null);
   const [shakeKey, setShakeKey] = useState(0);
   const [revealRow, setRevealRow] = useState<number | null>(null);
@@ -24,17 +31,20 @@ export function useGame(length: number, scorer: Scorer, maxGuesses = MAX_GUESSES
   const busy = useRef(false);
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
 
-  const reset = useCallback(() => {
+  // Stop pending reveal timers if the screen closes mid-flip.
+  useEffect(() => () => timers.current.forEach(clearTimeout), []);
+
+  const reset = useCallback((nextRows: BoardRow[] = []) => {
     timers.current.forEach(clearTimeout);
     timers.current = [];
     busy.current = false;
-    setRows([]);
+    setRows(nextRows);
     setCurrent("");
-    setStatus("playing");
+    setStatus(statusOf(nextRows, maxGuesses));
     setError(null);
     setRevealRow(null);
     setRevealing(false);
-  }, []);
+  }, [maxGuesses]);
 
   const canType = status === "playing" && !revealing;
 
@@ -52,6 +62,12 @@ export function useGame(length: number, scorer: Scorer, maxGuesses = MAX_GUESSES
     if (!canType) return;
     setCurrent((c) => Array.from(c).slice(0, -1).join(""));
     haptics.key();
+  }, [canType]);
+
+  const clear = useCallback(() => {
+    if (!canType) return;
+    setCurrent("");
+    haptics.reveal();
   }, [canType]);
 
   const reject = useCallback((message: string) => {
@@ -135,6 +151,7 @@ export function useGame(length: number, scorer: Scorer, maxGuesses = MAX_GUESSES
     keyMarks,
     type,
     del,
+    clear,
     submit,
     reset,
   };

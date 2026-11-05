@@ -18,6 +18,8 @@ const SPOKEN: Record<string, string> = { "+": "plus", [MINUS]: "minus", [TIMES]:
 interface Props {
   onKey: (ch: string) => void;
   onDelete: () => void;
+  /** Hold Delete to clear the whole row. */
+  onClear?: () => void;
   onEnter: () => void;
   keyMarks: Partial<Record<string, Mark>>;
   keyHeight: number;
@@ -26,7 +28,7 @@ interface Props {
   disabled?: boolean;
 }
 
-export function Keypad({ onKey, onDelete, onEnter, keyMarks, keyHeight, onlyKey, disabled }: Props) {
+export function Keypad({ onKey, onDelete, onClear, onEnter, keyMarks, keyHeight, onlyKey, disabled }: Props) {
   const { palette } = useTheme();
   const locked = (k: string) => disabled || (onlyKey != null && onlyKey !== k);
   const labelSize = Math.min(30, keyHeight * 0.48);
@@ -45,6 +47,7 @@ export function Keypad({ onKey, onDelete, onEnter, keyMarks, keyHeight, onlyKey,
                 onPress={() => onKey(ch)}
                 disabled={locked(ch)}
                 glow={onlyKey === ch}
+                onTouchDown
                 accessibilityLabel={`${SPOKEN[ch] ?? ch}${mark === "absent" ? ", not in the sum" : mark === "present" ? ", in the sum" : mark === "correct" ? ", placed" : ""}`}
               >
                 <Text
@@ -64,9 +67,12 @@ export function Keypad({ onKey, onDelete, onEnter, keyMarks, keyHeight, onlyKey,
           flex={2}
           background={palette.key}
           onPress={onDelete}
+          onLongPress={onClear}
+          onTouchDown
           disabled={locked("delete")}
           glow={onlyKey === "delete"}
           accessibilityLabel="Delete"
+          accessibilityHint={onClear ? "Hold to clear the row" : undefined}
         >
           <View style={styles.inline}>
             <Ionicons name="backspace-outline" size={labelSize * 0.9} color={palette.keyText} />

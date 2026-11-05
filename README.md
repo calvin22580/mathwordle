@@ -48,7 +48,37 @@ Then:
 Physical keyboards work on the web: digits, `+ - * / x =`, Enter and Backspace.
 
 Practice mode works fully offline. Settings (theme, colour-blind colours, text
-size, sounds, vibration) are saved on the device.
+size, sounds, vibration) and any unfinished practice game are saved on the
+device.
+
+### Building for iPhone with Xcode (macOS)
+
+Needs Xcode and CocoaPods. From the repo root:
+
+```
+npm install
+cd app
+npx expo prebuild --platform ios --clean   # writes the Xcode project to app/ios
+npx expo run:ios                            # builds and opens the Simulator
+```
+
+`app/ios` is generated, so it isn't committed; rerun `prebuild --clean` after
+changing `app.config.ts`, `brand.json` or native packages.
+
+### Sending a build to TestFlight
+
+1. In `app/app.config.ts`, raise `BUILD` by one for every upload (and `VERSION`
+   for each new App Store release).
+2. Run `npx expo prebuild --platform ios --clean`, then open
+   `app/ios/SumSleuth.xcworkspace` in Xcode.
+3. In the SumSleuth target's *Signing & Capabilities*, pick your team.
+4. Choose *Any iOS Device (arm64)*, then *Product → Archive*.
+5. In the Organizer, *Distribute App → App Store Connect → Upload*.
+6. The build appears in App Store Connect under TestFlight after processing
+   (usually 5 to 30 minutes).
+
+The first upload needs the app to exist in App Store Connect
+(*Apps → + → New App*) with the bundle ID from `brand.json`.
 
 ## The game engine
 

@@ -13,12 +13,13 @@ import { BRAND } from "@/services/brand";
 import { useSettings } from "@/state/settings";
 import { useTheme } from "@/theme/ThemeProvider";
 
+// How the guess 9÷3=3 scores against the hidden sum 3÷1=3.
 const LOGO: [string, Mark][] = [
-  ["9", "correct"],
-  ["÷", "present"],
-  ["3", "absent"],
-  ["=", "correct"],
+  ["9", "absent"],
+  ["÷", "correct"],
   ["3", "present"],
+  ["=", "correct"],
+  ["3", "correct"],
 ];
 
 const MODES: { difficulty: Difficulty; label: string; subtitle: string }[] = [

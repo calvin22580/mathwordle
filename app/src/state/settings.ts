@@ -5,6 +5,8 @@ import { createJSONStorage, persist } from "zustand/middleware";
 
 import type { TextScale } from "@/theme/typography";
 
+import { usePractice } from "./practice";
+
 export type Appearance = "system" | "light" | "dark";
 
 export interface Settings {
@@ -36,12 +38,19 @@ export const useSettings = create<Settings>()(
   ),
 );
 
-/** True once saved settings have been loaded from storage. */
+const STORES = [useSettings, usePractice];
+const allHydrated = () => STORES.every((s) => s.persist.hasHydrated());
+
+/** True once saved settings and games have been loaded from storage. */
 export function useSettingsLoaded(): boolean {
-  const [loaded, setLoaded] = useState(() => useSettings.persist.hasHydrated());
+  const [loaded, setLoaded] = useState(allHydrated);
   useEffect(() => {
-    if (useSettings.persist.hasHydrated()) setLoaded(true);
-    return useSettings.persist.onFinishHydration(() => setLoaded(true));
+    const check = () => {
+      if (allHydrated()) setLoaded(true);
+    };
+    check();
+    const unsubscribes = STORES.map((s) => s.persist.onFinishHydration(check));
+    return () => unsubscribes.forEach((u) => u());
   }, []);
   return loaded;
 }

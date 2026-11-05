@@ -1,5 +1,5 @@
-import { DIFFICULTIES, MAX_GUESSES, randomPuzzle, score, type Difficulty } from "@sumsleuth/engine";
-import { router, useLocalSearchParams } from "expo-router";
+import { DIFFICULTIES, MAX_GUESSES, randomPuzzle, score, validate, type Difficulty } from "@sumsleuth/engine";
+import { router, useIsFocused, useLocalSearchParams } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import { StyleSheet, View } from "react-native";
 
@@ -11,20 +11,43 @@ import { Keypad } from "@/components/Keypad";
 import { ResultCard } from "@/components/ResultCard";
 import { Header, Screen } from "@/components/Screen";
 import { Toast } from "@/components/Toast";
+import { usePractice, type SavedGame } from "@/state/practice";
 import { useGame } from "@/state/useGame";
 import { useGameLayout } from "@/state/useLayout";
 import { usePhysicalKeyboard } from "@/state/usePhysicalKeyboard";
 
 const TITLES: Record<Difficulty, string> = { easy: "Easy", medium: "Medium", hard: "Hard" };
 
+const isDifficulty = (d: string | undefined): d is Difficulty => !!d && Object.prototype.hasOwnProperty.call(DIFFICULTIES, d);
+
+/** A saved game is only picked up again if it still fits today's rules. */
+function usable(game: SavedGame | undefined, length: number): game is SavedGame {
+  return (
+    !!game &&
+    validate(game.answer, length).ok &&
+    game.rows.every((r) => Array.from(r.guess).length === length && r.marks.length === length)
+  );
+}
+
 export default function Practice() {
   const params = useLocalSearchParams<{ difficulty: string }>();
-  const difficulty: Difficulty = params.difficulty in DIFFICULTIES ? (params.difficulty as Difficulty) : "medium";
+  const difficulty: Difficulty = isDifficulty(params.difficulty) ? params.difficulty : "medium";
   const length = DIFFICULTIES[difficulty];
+  const focused = useIsFocused();
+  const save = usePractice((s) => s.save);
 
-  const [answer, setAnswer] = useState(() => randomPuzzle(length));
+  const [saved] = useState(() => {
+    const g = usePractice.getState().saved[difficulty];
+    return usable(g, length) ? g : null;
+  });
+  const [answer, setAnswer] = useState(() => saved?.answer ?? randomPuzzle(length));
   const scorer = useCallback((guess: string) => score(guess, answer), [answer]);
-  const game = useGame(length, scorer);
+  const game = useGame(length, scorer, MAX_GUESSES, saved?.rows);
+
+  // Keep the unfinished game so closing the app or going back never loses it.
+  useEffect(() => {
+    save(difficulty, game.status === "playing" && game.rows.length > 0 ? { answer, rows: game.rows } : null);
+  }, [answer, difficulty, game.rows, game.status, save]);
   const layout = useGameLayout(length, MAX_GUESSES);
   const [cluesOpen, setCluesOpen] = useState(false);
   const [burst, setBurst] = useState(0);
@@ -38,7 +61,7 @@ export default function Practice() {
     game.reset();
   };
 
-  usePhysicalKeyboard(game.type, game.del, game.submit, game.status === "playing" && !cluesOpen);
+  usePhysicalKeyboard(game.type, game.del, game.submit, focused && game.status === "playing" && !cluesOpen);
 
   const done = game.status !== "playing";
 
@@ -86,6 +109,7 @@ export default function Practice() {
           <Keypad
             onKey={game.type}
             onDelete={game.del}
+            onClear={game.clear}
             onEnter={game.submit}
             keyMarks={game.keyMarks}
             keyHeight={layout.keyHeight}
