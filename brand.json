@@ -2,7 +2,7 @@
   "name": "Sum Sleuth",
   "tagline": "Crack the hidden sum in six guesses.",
   "shareUrl": "https://sumsleuth.example",
-  "iosBundleId": "com.example.sumsleuth",
-  "androidPackage": "com.example.sumsleuth",
+  "iosBundleId": "com.calvinholloway.sumsleuth",
+  "androidPackage": "com.calvinholloway.sumsleuth",
   "urlScheme": "sumsleuth"
 }

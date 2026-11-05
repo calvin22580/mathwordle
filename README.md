@@ -18,9 +18,67 @@ backend/              FastAPI server (Python)
   app/engine/         the rules: validator, scorer, answers, daily picker, clues
   tests/
 packages/engine/      the same rules in TypeScript, for the app
+app/                  Expo app for iOS, Android and the web
+  src/app/            screens (Expo Router): home, practice, settings, tutorial
+  src/components/     board, tiles, keypad, clue panel, confetti, result card
+  src/state/          game logic hook, settings (saved on the device)
+  src/theme/          light, dark and colour-blind palettes, text sizes
+  src/services/       haptics, sounds, brand
 ```
 
-The Expo app (`app/`) and the API routes arrive in later phases.
+The API routes and daily puzzle arrive in a later phase.
+
+## Running the app
+
+Needs Node 20 or newer. From the repo root:
+
+```
+npm install
+cd app
+npx expo start
+```
+
+Then:
+
+- **On your phone:** install Expo Go from the App Store or Google Play and scan
+  the QR code in the terminal. Phone and computer must be on the same Wi-Fi
+  (or run `npx expo start --tunnel`).
+- **In a browser:** press `w`, or run `npx expo start --web`.
+
+Physical keyboards work on the web: digits, `+ - * / x =`, Enter and Backspace.
+
+Practice mode works fully offline. Settings (theme, colour-blind colours, text
+size, sounds, vibration) and any unfinished practice game are saved on the
+device.
+
+### Building for iPhone with Xcode (macOS)
+
+Needs Xcode and CocoaPods. From the repo root:
+
+```
+npm install
+cd app
+npx expo prebuild --platform ios --clean   # writes the Xcode project to app/ios
+npx expo run:ios                            # builds and opens the Simulator
+```
+
+`app/ios` is generated, so it isn't committed; rerun `prebuild --clean` after
+changing `app.config.ts`, `brand.json` or native packages.
+
+### Sending a build to TestFlight
+
+1. In `app/app.config.ts`, raise `BUILD` by one for every upload (and `VERSION`
+   for each new App Store release).
+2. Run `npx expo prebuild --platform ios --clean`, then open
+   `app/ios/SumSleuth.xcworkspace` in Xcode.
+3. In the SumSleuth target's *Signing & Capabilities*, pick your team.
+4. Choose *Any iOS Device (arm64)*, then *Product → Archive*.
+5. In the Organizer, *Distribute App → App Store Connect → Upload*.
+6. The build appears in App Store Connect under TestFlight after processing
+   (usually 5 to 30 minutes).
+
+The first upload needs the app to exist in App Store Connect
+(*Apps → + → New App*) with the bundle ID from `brand.json`.
 
 ## The game engine
 

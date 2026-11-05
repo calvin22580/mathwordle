@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { allAnswers, checkAnswer, emojiRow, explain, isWin, mulberry32, randomPuzzle, score, validate } from "../src";
+import { allAnswers, answerList, checkAnswer, emojiRow, explain, isWin, mulberry32, randomPuzzle, score, validate } from "../src";
 
 describe("validate", () => {
   it("accepts true equations and explains false ones", () => {
@@ -30,6 +30,10 @@ describe("practice puzzles", () => {
     for (const length of [5, 6, 8]) {
       for (let i = 0; i < 200; i++) expect(checkAnswer(randomPuzzle(length, rng)).ok).toBe(true);
     }
+  });
+
+  it("ships pre-built lists identical to the rules", () => {
+    for (const length of [5, 6, 8]) expect(answerList(length)).toEqual(allAnswers(length));
   });
 
   it("builds the hard list quickly enough for a phone", () => {

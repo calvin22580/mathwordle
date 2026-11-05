@@ -19,7 +19,9 @@ from .equation import ALPHABET, format_value, normalize, validate
 from .generator import mulberry32, random_puzzle
 from .scoring import score
 
-OUT_DIR = Path(__file__).resolve().parents[3] / "shared" / "test-vectors"
+ROOT = Path(__file__).resolve().parents[3]
+OUT_DIR = ROOT / "shared" / "test-vectors"
+ANSWER_LISTS = ROOT / "packages" / "engine" / "src" / "answer-lists.json"
 
 CURATED_GUESSES = [
     ("9÷3×9=27", 8), ("3+4=7", 5), ("2+3×4=14", 8), ("20−6÷2=17", 9), ("8÷2÷2=2", 7),
@@ -177,10 +179,17 @@ def render() -> dict[str, str]:
     }
 
 
+def render_answer_lists() -> str:
+    """Pre-built answer lists for the app, so phones never have to compute them."""
+    lists = {str(n): list(all_answers(n)) for n in (5, 6, 8)}
+    return json.dumps(lists, ensure_ascii=False, separators=(",", ":")) + "\n"
+
+
 def write() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     for filename, text in render().items():
         (OUT_DIR / filename).write_text(text, encoding="utf-8")
+    ANSWER_LISTS.write_text(render_answer_lists(), encoding="utf-8")
 
 
 if __name__ == "__main__":
